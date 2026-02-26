@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "651968943136",
+    "project_id": "sanai-87142",
+    "storage_bucket": "sanai-87142.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651968943136:android:c0768d8acd93eb1bf3d845",
+        "android_client_info": {
+          "package_name": "com.mycompany.sanai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQQdNRBTO6lqgO1Io-WX3hmLY7HsuI2tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
