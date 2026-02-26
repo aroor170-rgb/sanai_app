@@ -32,3 +32,4 @@ ios/.symlinks/
 Thumbs.db
 git rm --cached sanai/Backend/serviceAccountKey.json
 sanai/Backend/serviceAccountKey.json
+sanai/Backend/serviceAccountKey.json
