@@ -73,7 +73,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -90,7 +90,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -102,7 +102,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                       child: Container(
                         width: 100.0,
                         height: 95.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -125,7 +125,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.psychology_alt,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -149,7 +149,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -174,7 +174,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -186,18 +186,18 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Container(
                       width: 100.0,
                       height: 95.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFC9F0F9),
                         boxShadow: [
                           BoxShadow(
@@ -220,7 +220,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.psychology_alt,
                             color: Color(0xFF105A4A),
                             size: 30.0,
@@ -242,7 +242,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -265,7 +265,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0x86105A4A),
+                                      color: const Color(0x86105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -277,13 +277,13 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                               ),
                             ],
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -295,7 +295,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                       child: Container(
                         width: 100.0,
                         height: 95.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -318,7 +318,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.psychology_alt,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -342,7 +342,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -367,7 +367,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -379,18 +379,18 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(width: 20.0)),
+                          ].divide(const SizedBox(width: 20.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Container(
                       width: 100.0,
                       height: 95.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFC9F0F9),
                         boxShadow: [
                           BoxShadow(
@@ -413,7 +413,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.forward_sharp,
                             color: Color(0xFF105A4A),
                             size: 30.0,
@@ -435,7 +435,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -458,7 +458,7 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0x86105A4A),
+                                      color: const Color(0x86105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -470,13 +470,13 @@ class _SocailProblemsWidgetState extends State<SocailProblemsWidget> {
                               ),
                             ],
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 10.0)),
+                ].divide(const SizedBox(height: 10.0)),
               ),
-            ].divide(SizedBox(height: 10.0)),
+            ].divide(const SizedBox(height: 10.0)),
           ),
         ),
       ),

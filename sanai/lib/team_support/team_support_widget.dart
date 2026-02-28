@@ -69,7 +69,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
             },
           ),
           title: Align(
-            alignment: AlignmentDirectional(-1.0, 0.0),
+            alignment: const AlignmentDirectional(-1.0, 0.0),
             child: Text(
               'Support Chat',
               style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -85,7 +85,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                   ),
             ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -106,7 +106,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -119,11 +119,11 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                 Container(
                                   width: 60.0,
                                   height: 60.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0x4C52A4B6),
                                     shape: BoxShape.circle,
                                   ),
-                                  child: Align(
+                                  child: const Align(
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Icon(
                                       Icons.support_agent,
@@ -190,7 +190,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -201,13 +201,13 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                         Container(
                                           width: 32.0,
                                           height: 32.0,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Color(0xFF70A4B3),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.support_agent,
                                               color:
@@ -251,7 +251,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                                         ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 2.0, 0.0, 0.0),
                                                 child: Text(
@@ -294,10 +294,10 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8.0)),
+                                      ].divide(const SizedBox(width: 8.0)),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 0.0),
                                       child: Text(
                                         'Welcome! How can I help you today? You can ask about account issues, billing questions, feature requests, or report any bugs you\'ve encountered.',
@@ -337,11 +337,11 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                 Container(
                                   width: 280.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFF8BC6D7),
+                                    color: const Color(0xFF8BC6D7),
                                     borderRadius: BorderRadius.circular(16.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -380,7 +380,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             '2 min ago',
@@ -433,22 +433,22 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                               ),
                             ),
                           ]
-                              .divide(SizedBox(height: 16.0))
-                              .addToStart(SizedBox(height: 16.0))
-                              .addToEnd(SizedBox(height: 100.0)),
+                              .divide(const SizedBox(height: 16.0))
+                              .addToStart(const SizedBox(height: 16.0))
+                              .addToEnd(const SizedBox(height: 100.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).primaryBackground,
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -505,7 +505,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Row(
@@ -517,7 +517,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                     focusNode: _model.textFieldFocusNode,
                                     onChanged: (_) => EasyDebounce.debounce(
                                       '_model.textController',
-                                      Duration(milliseconds: 2000),
+                                      const Duration(milliseconds: 2000),
                                       () => safeSetState(() {}),
                                     ),
                                     autofocus: false,
@@ -592,7 +592,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       contentPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               16.0, 12.0, 16.0, 12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -645,7 +645,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                   borderColor: Colors.transparent,
                                   borderRadius: 24.0,
                                   buttonSize: 48.0,
-                                  fillColor: Color(0xFF8BC6D7),
+                                  fillColor: const Color(0xFF8BC6D7),
                                   icon: Icon(
                                     Icons.send_rounded,
                                     color: FlutterFlowTheme.of(context).info,
@@ -655,9 +655,9 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                     print('IconButton pressed ...');
                                   },
                                 ),
-                              ].divide(SizedBox(width: 12.0)),
+                              ].divide(const SizedBox(width: 12.0)),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
                     ),
@@ -665,9 +665,9 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.04),
+                alignment: const AlignmentDirectional(0.0, 1.04),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -695,7 +695,7 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                             .primaryText,
                                         size: 30.0,
                                       ),
-                                    ].divide(SizedBox(width: 10.0)),
+                                    ].divide(const SizedBox(width: 10.0)),
                                   ),
                                   Icon(
                                     Icons.zoom_in,
@@ -703,11 +703,11 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                                         .primaryText,
                                     size: 30.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
-                            ].divide(SizedBox(width: 10.0)),
+                            ].divide(const SizedBox(width: 10.0)),
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                       Icon(
                         Icons.zoom_out,
@@ -725,8 +725,8 @@ class _TeamSupportWidgetState extends State<TeamSupportWidget> {
                         size: 30.0,
                       ),
                     ]
-                        .divide(SizedBox(width: 10.0))
-                        .around(SizedBox(width: 10.0)),
+                        .divide(const SizedBox(width: 10.0))
+                        .around(const SizedBox(width: 10.0)),
                   ),
                 ),
               ),

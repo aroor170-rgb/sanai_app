@@ -51,13 +51,13 @@ class _EditSavedWidgetState extends State<EditSavedWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Container(
                   width: 280.0,
                   height: 182.1,
                   decoration: BoxDecoration(
-                    color: Color(0xFFC9F0F9),
-                    boxShadow: [
+                    color: const Color(0xFFC9F0F9),
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 12.0,
                         color: Color(0x40000000),
@@ -72,7 +72,7 @@ class _EditSavedWidgetState extends State<EditSavedWidget> {
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           'Reminder saved',
                           style:
@@ -85,7 +85,7 @@ class _EditSavedWidgetState extends State<EditSavedWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 28.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -102,15 +102,15 @@ class _EditSavedWidgetState extends State<EditSavedWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.78, -0.18),
+                alignment: const AlignmentDirectional(-0.78, -0.18),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                   child: FlutterFlowIconButton(
                     borderColor: Colors.transparent,
                     borderRadius: 30.0,
                     borderWidth: 1.0,
                     buttonSize: 29.0,
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back_rounded,
                       color: Color(0xE6485153),
                       size: 38.0,

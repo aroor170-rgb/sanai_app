@@ -62,13 +62,13 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                 Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: Stack(
                         children: [
                           Container(
                             width: double.infinity,
                             height: 227.38,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                                 stops: [0.0, 1.0],
@@ -83,9 +83,9 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 45.0, 0.0, 10.0),
                                         child: Text(
                                           'medication reminder',
@@ -115,7 +115,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                             shadows: [
-                                              Shadow(
+                                              const Shadow(
                                                 color: Color(0xFF8BC6D7),
                                                 offset: Offset(1.0, 1.0),
                                                 blurRadius: 1.0,
@@ -125,15 +125,15 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 50.0)),
+                                  ].divide(const SizedBox(width: 50.0)),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 110.0, 0.0, 0.0),
                                   child: FlutterFlowIconButton(
                                     borderRadius: 8.0,
                                     buttonSize: 40.0,
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.arrow_back,
                                       color: Color(0xFF335656),
                                       size: 30.0,
@@ -147,9 +147,9 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 1.41),
+                            alignment: const AlignmentDirectional(0.0, 1.41),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 210.0, 0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -157,38 +157,38 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(0.0),
                                     bottomRight: Radius.circular(0.0),
                                     topLeft: Radius.circular(50.0),
                                     topRight: Radius.circular(50.0),
                                   ),
                                   border: Border.all(
-                                    color: Color(0xFFC9F0F9),
+                                    color: const Color(0xFFC9F0F9),
                                   ),
                                 ),
                                 child: Stack(
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 100.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 500.0,
                                             height: 734.8,
                                             child: Stack(
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -0.13, -0.36),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(9.0, 0.0,
                                                                 0.0, 360.0),
                                                     child: Container(
@@ -196,9 +196,9 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                       height: 70.0,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            Color(0xFFC9F0F9),
+                                                            const Color(0xFFC9F0F9),
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                            const BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
                                                                   18.0),
@@ -222,7 +222,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.22, 0.0),
                                                             child:
                                                                 FFButtonWidget(
@@ -238,20 +238,20 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                                   FFButtonOptions(
                                                                 width: 190.9,
                                                                 height: 130.0,
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0x006DAEA7),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
@@ -266,7 +266,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                                             .titleSmall
                                                                             .fontStyle,
                                                                       ),
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF2C4A31),
                                                                       fontSize:
                                                                           22.0,
@@ -291,7 +291,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.89, 0.0),
                                                             child: ClipRRect(
                                                               borderRadius:
@@ -315,11 +315,11 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -0.23, 0.17),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(20.0, 0.0,
                                                                 0.0, 300.0),
                                                     child: Container(
@@ -327,9 +327,9 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                       height: 70.0,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            Color(0xFFC9F0F9),
+                                                            const Color(0xFFC9F0F9),
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                            const BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
                                                                   18.0),
@@ -353,7 +353,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.45, 0.0),
                                                             child:
                                                                 FFButtonWidget(
@@ -369,20 +369,20 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                                   FFButtonOptions(
                                                                 width: 190.9,
                                                                 height: 130.0,
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0x006DAEA7),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
@@ -397,7 +397,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                                             .titleSmall
                                                                             .fontStyle,
                                                                       ),
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF2C4A31),
                                                                       fontSize:
                                                                           22.0,
@@ -422,7 +422,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.89, 0.0),
                                                             child: ClipRRect(
                                                               borderRadius:
@@ -446,7 +446,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -0.1, 0.23),
                                                   child: ClipRRect(
                                                     borderRadius:
@@ -463,14 +463,14 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                               ],
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 50.0)),
+                                        ].divide(const SizedBox(height: 50.0)),
                                       ),
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.0, 0.87),
+                                          const AlignmentDirectional(0.0, 0.87),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 30.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -507,7 +507,7 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                                   .primaryText,
                                                               size: 30.0,
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 10.0)),
                                                         ),
                                                         Icon(
@@ -517,13 +517,13 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                                               .primaryText,
                                                           size: 30.0,
                                                         ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           width: 10.0)),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 10.0)),
+                                                      const SizedBox(width: 10.0)),
                                                 ),
-                                              ].divide(SizedBox(width: 10.0)),
+                                              ].divide(const SizedBox(width: 10.0)),
                                             ),
                                             Icon(
                                               Icons.zoom_out,
@@ -547,8 +547,8 @@ class _MedicationReminderWidgetState extends State<MedicationReminderWidget> {
                                               size: 30.0,
                                             ),
                                           ]
-                                              .divide(SizedBox(width: 10.0))
-                                              .around(SizedBox(width: 10.0)),
+                                              .divide(const SizedBox(width: 10.0))
+                                              .around(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),

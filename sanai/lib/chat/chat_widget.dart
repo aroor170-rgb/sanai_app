@@ -49,7 +49,7 @@ class _ChatWidgetState extends State<ChatWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF1FCFF),
+        backgroundColor: const Color(0xFFF1FCFF),
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
@@ -72,7 +72,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                 width: 40.0,
                 height: 40.0,
                 clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                 ),
                 child: Image.asset(
@@ -102,11 +102,11 @@ class _ChatWidgetState extends State<ChatWidget> {
                   ),
                 ],
               ),
-            ].divide(SizedBox(width: 12.0)),
+            ].divide(const SizedBox(width: 12.0)),
           ),
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -122,7 +122,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                       print('IconButton pressed ...');
                     },
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ),
           ],
@@ -145,9 +145,9 @@ class _ChatWidgetState extends State<ChatWidget> {
                       scrollDirection: Axis.vertical,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.7,
                               decoration: BoxDecoration(
@@ -155,7 +155,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                 borderRadius: BorderRadius.circular(18.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   'Hey! How are you doing today?',
                                   style: FlutterFlowTheme.of(context)
@@ -186,17 +186,17 @@ class _ChatWidgetState extends State<ChatWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(1.0, 0.0),
+                          alignment: const AlignmentDirectional(1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.7,
                               decoration: BoxDecoration(
-                                color: Color(0xFF8BC6D7),
+                                color: const Color(0xFF8BC6D7),
                                 borderRadius: BorderRadius.circular(18.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   'My mood today is not good 😞',
                                   style: FlutterFlowTheme.of(context)
@@ -229,9 +229,9 @@ class _ChatWidgetState extends State<ChatWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.7,
                               decoration: BoxDecoration(
@@ -239,7 +239,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                 borderRadius: BorderRadius.circular(18.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   'Don\'t worry ..',
                                   style: FlutterFlowTheme.of(context)
@@ -270,17 +270,17 @@ class _ChatWidgetState extends State<ChatWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(1.0, 0.0),
+                          alignment: const AlignmentDirectional(1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.7,
                               decoration: BoxDecoration(
-                                color: Color(0xFF8BC6D7),
+                                color: const Color(0xFF8BC6D7),
                                 borderRadius: BorderRadius.circular(18.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   'What should i do ???',
                                   style: FlutterFlowTheme.of(context)
@@ -313,9 +313,9 @@ class _ChatWidgetState extends State<ChatWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.7,
                               height: 53.0,
@@ -324,7 +324,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                 borderRadius: BorderRadius.circular(18.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -359,24 +359,24 @@ class _ChatWidgetState extends State<ChatWidget> {
                                         ),
                                       ],
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                               ),
                             ),
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(1.0, 0.0),
+                          alignment: const AlignmentDirectional(1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.7,
                               decoration: BoxDecoration(
-                                color: Color(0xFF8BC6D7),
+                                color: const Color(0xFF8BC6D7),
                                 borderRadius: BorderRadius.circular(18.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -414,16 +414,16 @@ class _ChatWidgetState extends State<ChatWidget> {
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 8.0)),
+                                  ].divide(const SizedBox(width: 8.0)),
                                 ),
                               ),
                             ),
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 150.0, 0.0, 0.0),
                             child: SingleChildScrollView(
                               child: Column(
@@ -431,9 +431,9 @@ class _ChatWidgetState extends State<ChatWidget> {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -445,7 +445,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                             fillColor:
                                                 FlutterFlowTheme.of(context)
                                                     .primaryBackground,
-                                            icon: Icon(
+                                            icon: const Icon(
                                               Icons.attach_file,
                                               color: Color(0xFF8BC6D7),
                                               size: 24.0,
@@ -455,7 +455,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                             },
                                           ),
                                           Expanded(
-                                            child: Container(
+                                            child: SizedBox(
                                               width: double.infinity,
                                               child: TextFormField(
                                                 controller:
@@ -527,7 +527,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -537,7 +537,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -551,7 +551,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                                               context)
                                                           .primaryBackground,
                                                   contentPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(16.0, 12.0,
                                                               16.0, 12.0),
                                                 ),
@@ -601,7 +601,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                                           FlutterFlowIconButton(
                                             borderRadius: 22.0,
                                             buttonSize: 44.0,
-                                            fillColor: Color(0xFF8BC6D7),
+                                            fillColor: const Color(0xFF8BC6D7),
                                             icon: Icon(
                                               Icons.mic,
                                               color:
@@ -611,12 +611,13 @@ class _ChatWidgetState extends State<ChatWidget> {
                                             ),
                                             onPressed: () {
                                               print('IconButton pressed ...');
+                                              
                                             },
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 22.0,
                                             buttonSize: 44.0,
-                                            fillColor: Color(0xFF8BC6D7),
+                                            fillColor: const Color(0xFF8BC6D7),
                                             icon: Icon(
                                               Icons.record_voice_over_outlined,
                                               color:
@@ -625,10 +626,10 @@ class _ChatWidgetState extends State<ChatWidget> {
                                               size: 24.0,
                                             ),
                                             onPressed: () {
-                                              print('IconButton pressed ...');
+                                             context.pushNamed('voice_chat_page');
                                             },
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                     ),
                                   ),

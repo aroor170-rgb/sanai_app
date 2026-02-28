@@ -69,7 +69,7 @@ class _PsychologicalDisordersWidgetState
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -81,10 +81,10 @@ class _PsychologicalDisordersWidgetState
               Expanded(
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                   child: GridView(
                     padding: EdgeInsets.zero,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 12.0,
                       mainAxisSpacing: 12.0,
@@ -93,7 +93,7 @@ class _PsychologicalDisordersWidgetState
                     scrollDirection: Axis.vertical,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 12.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
@@ -106,7 +106,7 @@ class _PsychologicalDisordersWidgetState
                           child: Container(
                             width: 100.0,
                             height: 140.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xFFC9F0F9),
                               boxShadow: [
                                 BoxShadow(
@@ -129,7 +129,7 @@ class _PsychologicalDisordersWidgetState
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.psychology_alt,
                                   color: Color(0xFF105A4A),
                                   size: 30.0,
@@ -149,7 +149,7 @@ class _PsychologicalDisordersWidgetState
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -159,18 +159,18 @@ class _PsychologicalDisordersWidgetState
                                             .fontStyle,
                                       ),
                                 ),
-                              ].divide(SizedBox(height: 10.0)),
+                              ].divide(const SizedBox(height: 10.0)),
                             ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 12.0),
                         child: Container(
                           width: 100.0,
                           height: 140.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFC9F0F9),
                             boxShadow: [
                               BoxShadow(
@@ -193,7 +193,7 @@ class _PsychologicalDisordersWidgetState
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.psychology_alt,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -211,7 +211,7 @@ class _PsychologicalDisordersWidgetState
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -221,17 +221,17 @@ class _PsychologicalDisordersWidgetState
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 10.0)),
+                            ].divide(const SizedBox(height: 10.0)),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 12.0),
                         child: Container(
                           width: 100.0,
                           height: 140.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFC9F0F9),
                             boxShadow: [
                               BoxShadow(
@@ -254,7 +254,7 @@ class _PsychologicalDisordersWidgetState
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.psychology_alt,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -273,7 +273,7 @@ class _PsychologicalDisordersWidgetState
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -283,17 +283,17 @@ class _PsychologicalDisordersWidgetState
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 10.0)),
+                            ].divide(const SizedBox(height: 10.0)),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 12.0),
                         child: Container(
                           width: 100.0,
                           height: 140.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFC9F0F9),
                             boxShadow: [
                               BoxShadow(
@@ -316,7 +316,7 @@ class _PsychologicalDisordersWidgetState
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.psychology_alt,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -334,7 +334,7 @@ class _PsychologicalDisordersWidgetState
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -344,17 +344,17 @@ class _PsychologicalDisordersWidgetState
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 10.0)),
+                            ].divide(const SizedBox(height: 10.0)),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 12.0),
                         child: Container(
                           width: 100.0,
                           height: 140.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFC9F0F9),
                             boxShadow: [
                               BoxShadow(
@@ -377,7 +377,7 @@ class _PsychologicalDisordersWidgetState
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.psychology_alt,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -395,7 +395,7 @@ class _PsychologicalDisordersWidgetState
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -405,17 +405,17 @@ class _PsychologicalDisordersWidgetState
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 10.0)),
+                            ].divide(const SizedBox(height: 10.0)),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 12.0),
                         child: Container(
                           width: 100.0,
                           height: 140.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFC9F0F9),
                             boxShadow: [
                               BoxShadow(
@@ -438,7 +438,7 @@ class _PsychologicalDisordersWidgetState
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.forward_sharp,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -456,7 +456,7 @@ class _PsychologicalDisordersWidgetState
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -466,7 +466,7 @@ class _PsychologicalDisordersWidgetState
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 10.0)),
+                            ].divide(const SizedBox(height: 10.0)),
                           ),
                         ),
                       ),
@@ -474,7 +474,7 @@ class _PsychologicalDisordersWidgetState
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 10.0)),
+            ].divide(const SizedBox(height: 10.0)),
           ),
         ),
       ),

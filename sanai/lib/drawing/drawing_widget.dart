@@ -50,11 +50,11 @@ class _DrawingWidgetState extends State<DrawingWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, -1.21),
+                alignment: const AlignmentDirectional(0.0, -1.21),
                 child: Container(
                   width: double.infinity,
                   height: 187.63,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                       stops: [0.0, 1.0],
@@ -76,13 +76,13 @@ class _DrawingWidgetState extends State<DrawingWidget> {
               Stack(
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.58),
+                    alignment: const AlignmentDirectional(0.0, 1.58),
                     child: Container(
                       width: double.infinity,
                       height: 700.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(50.0),
@@ -92,7 +92,7 @@ class _DrawingWidgetState extends State<DrawingWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.04, -0.69),
+                    alignment: const AlignmentDirectional(0.04, -0.69),
                     child: Text(
                       'Draw your feeling',
                       style:
@@ -118,11 +118,11 @@ class _DrawingWidgetState extends State<DrawingWidget> {
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.01, -0.14),
+                alignment: const AlignmentDirectional(0.01, -0.14),
                 child: Container(
                   width: 300.0,
                   height: 300.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                       stops: [0.0, 1.0],
@@ -139,11 +139,11 @@ class _DrawingWidgetState extends State<DrawingWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.11, 0.5),
+                alignment: const AlignmentDirectional(0.11, 0.5),
                 child: Container(
                   width: 353.3,
                   height: 44.8,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0xFFD5D8D8),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(10.0),

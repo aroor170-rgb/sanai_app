@@ -4,14 +4,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
-import 'dart:math';
 import 'dart:ui';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'setiing_model.dart';
 export 'setiing_model.dart';
 
@@ -355,7 +352,7 @@ class _SetiingWidgetState extends State<SetiingWidget>
                   children: [
                     FFButtonWidget(
                       onPressed: () {
-                        // TODO
+                        context.pushNamed(EditPhone0Widget.routeName);
                       },
                       text: 'Change Email',
                       icon: const Icon(
@@ -398,7 +395,7 @@ class _SetiingWidgetState extends State<SetiingWidget>
                     ),
                     FFButtonWidget(
                       onPressed: () async {
-  await showChangePasswordBottomSheet(context);
+  context.pushNamed(ChangePasswordWidget.routeName);
 },
                       text: 'Change Password',
                       icon: const Icon(

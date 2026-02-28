@@ -51,7 +51,7 @@ class _AdminWidgetState extends State<AdminWidget> {
             Container(
               width: double.infinity,
               height: 212.61,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x24B5F4EE)],
                   stops: [0.0, 1.0],
@@ -60,13 +60,13 @@ class _AdminWidgetState extends State<AdminWidget> {
                 ),
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         'Statistics',
                         style:
@@ -88,7 +88,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                               .headlineLarge
                               .fontStyle,
                           shadows: [
-                            Shadow(
+                            const Shadow(
                               color: Color(0xFF8BC6D7),
                               offset: Offset(1.0, 1.0),
                               blurRadius: 1.0,
@@ -97,18 +97,18 @@ class _AdminWidgetState extends State<AdminWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 50.0)),
+                  ].divide(const SizedBox(width: 50.0)),
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.12),
+              alignment: const AlignmentDirectional(0.0, 1.12),
               child: Container(
                 width: double.infinity,
                 height: 700.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
@@ -116,7 +116,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 100.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 100.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -125,7 +125,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                         width: 340.4,
                         height: 115.74,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0xB916C9FF), Color(0x11B1EDE5)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
@@ -140,7 +140,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
                                     'Cities',
                                     textAlign: TextAlign.start,
@@ -157,7 +157,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF287968),
+                                          color: const Color(0xFF287968),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight:
@@ -179,7 +179,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 50.0)),
+                              ].divide(const SizedBox(width: 50.0)),
                             ),
                           ],
                         ),
@@ -188,7 +188,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                         width: 340.4,
                         height: 115.7,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0x62DB35C6), Color(0x11DAA6DA)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
@@ -203,7 +203,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
                                     'Public Information',
                                     textAlign: TextAlign.start,
@@ -220,7 +220,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF287968),
+                                          color: const Color(0xFF287968),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight:
@@ -235,18 +235,18 @@ class _AdminWidgetState extends State<AdminWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
                                     child: Image.asset(
                                       'assets/images/c5fb6f2bac0f923876d01deb9f748a7b-removebg-preview.png',
                                       height: 80.0,
                                       fit: BoxFit.cover,
-                                      alignment: Alignment(-1.0, 0.0),
+                                      alignment: const Alignment(-1.0, 0.0),
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 5.0)),
+                              ].divide(const SizedBox(width: 5.0)),
                             ),
                           ],
                         ),
@@ -255,7 +255,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                         width: 340.4,
                         height: 115.7,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0x8EF4EB27), Color(0x15ECEBBC)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
@@ -270,7 +270,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
                                     'Diseases',
                                     textAlign: TextAlign.start,
@@ -287,7 +287,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF287968),
+                                          color: const Color(0xFF287968),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight:
@@ -309,7 +309,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 5.0)),
+                              ].divide(const SizedBox(width: 5.0)),
                             ),
                           ],
                         ),
@@ -318,7 +318,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                         width: 340.4,
                         height: 115.7,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [Color(0x628308DC), Color(0x11DEBBE9)],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
@@ -333,7 +333,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
                                     'causes and solutions',
                                     textAlign: TextAlign.start,
@@ -350,7 +350,7 @@ class _AdminWidgetState extends State<AdminWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF287968),
+                                          color: const Color(0xFF287968),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight:
@@ -372,12 +372,12 @@ class _AdminWidgetState extends State<AdminWidget> {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 5.0)),
+                              ].divide(const SizedBox(width: 5.0)),
                             ),
                           ],
                         ),
                       ),
-                    ].divide(SizedBox(height: 20.0)),
+                    ].divide(const SizedBox(height: 20.0)),
                   ),
                 ),
               ),

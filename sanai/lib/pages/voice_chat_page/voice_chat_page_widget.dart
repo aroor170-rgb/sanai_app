@@ -32,7 +32,6 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.pushNamed(AboutWidget.routeName);
     });
   }
 
@@ -47,17 +46,17 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFFF1FCFF),
+      backgroundColor: const Color(0xFFF1FCFF),
       body: SafeArea(
         top: true,
         child: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 1.74),
+              alignment: const AlignmentDirectional(0.0, 1.74),
               child: Container(
                 width: double.infinity,
                 height: 720.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFFF1FCFF),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
@@ -66,7 +65,7 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
                     topRight: Radius.circular(70.0),
                   ),
                 ),
-                child: Icon(
+                child: const Icon(
                   Icons.graphic_eq_outlined,
                   color: Color(0xFF8BC6D7),
                   size: 100.0,
@@ -74,7 +73,7 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.05, -0.79),
+              alignment: const AlignmentDirectional(0.05, -0.79),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12.0),
                 child: Image.asset(
@@ -86,11 +85,11 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.54, 0.84),
+              alignment: const AlignmentDirectional(0.54, 0.84),
               child: FlutterFlowIconButton(
                 borderRadius: 50.0,
                 buttonSize: 65.1,
-                fillColor: Color(0xFF8BC6D7),
+                fillColor: const Color(0xFF8BC6D7),
                 icon: Icon(
                   Icons.check,
                   color: FlutterFlowTheme.of(context).info,
@@ -102,11 +101,11 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.03, 0.65),
+              alignment: const AlignmentDirectional(0.03, 0.65),
               child: FlutterFlowIconButton(
                 borderRadius: 50.0,
                 buttonSize: 94.85,
-                fillColor: Color(0xFF8BC6D7),
+                fillColor: const Color(0xFF8BC6D7),
                 icon: Icon(
                   Icons.mic,
                   color: FlutterFlowTheme.of(context).info,
@@ -118,11 +117,11 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.42, 0.85),
+              alignment: const AlignmentDirectional(-0.42, 0.85),
               child: FlutterFlowIconButton(
                 borderRadius: 50.0,
                 buttonSize: 65.1,
-                fillColor: Color(0xFF8BC6D7),
+                fillColor: const Color(0xFF8BC6D7),
                 icon: Icon(
                   Icons.clear_sharp,
                   color: FlutterFlowTheme.of(context).info,
@@ -134,7 +133,7 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.05, -1.0),
+              alignment: const AlignmentDirectional(-0.05, -1.0),
               child: Text(
                 'Voice Chat',
                 style: FlutterFlowTheme.of(context).displayMedium.override(
@@ -146,7 +145,7 @@ class _VoiceChatPageWidgetState extends State<VoiceChatPageWidget> {
                             .displayMedium
                             .fontStyle,
                       ),
-                      color: Color(0xFF105A4A),
+                      color: const Color(0xFF105A4A),
                       letterSpacing: 0.0,
                       fontWeight:
                           FlutterFlowTheme.of(context).displayMedium.fontWeight,

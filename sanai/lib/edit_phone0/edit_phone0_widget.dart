@@ -50,8 +50,8 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -78,11 +78,11 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
         body: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, -1.14),
+              alignment: const AlignmentDirectional(0.0, -1.14),
               child: Container(
                 width: double.infinity,
                 height: 288.36,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF92CCDA), Color(0xFFC9F1F1)],
                     stops: [0.0, 1.0],
@@ -93,24 +93,24 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 height: 650.0,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0xFFC9F0F9),
+                    color: const Color(0xFFC9F0F9),
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -124,12 +124,12 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 50.0, 0.0, 0.0),
                             child: Text(
-                              'Authentication ',
+                              'Change Email ',
                               style: FlutterFlowTheme.of(context)
                                   .headlineLarge
                                   .override(
@@ -146,7 +146,7 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                                     .headlineLarge
                                     .fontStyle,
                                 shadows: [
-                                  Shadow(
+                                  const Shadow(
                                     color: Color(0x7236CBB3),
                                     offset: Offset(1.0, 1.0),
                                     blurRadius: 1.0,
@@ -157,9 +157,9 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
-                          child: Container(
+                          child: SizedBox(
                             width: 300.0,
                             child: TextFormField(
                               controller: _model.textController1,
@@ -169,7 +169,7 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                               obscureText: !_model.passwordVisibility1,
                               decoration: InputDecoration(
                                 isDense: true,
-                                labelText: 'Phone Number or Email',
+                                labelText: 'new email',
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
@@ -209,14 +209,14 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFC9F0F9),
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -282,9 +282,9 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
-                          child: Container(
+                          child: SizedBox(
                             width: 300.0,
                             child: TextFormField(
                               controller: _model.textController2,
@@ -294,7 +294,7 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                               obscureText: !_model.passwordVisibility2,
                               decoration: InputDecoration(
                                 isDense: true,
-                                labelText: 'Enter Verification Pass',
+                                labelText: 'verify new email',
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
@@ -334,14 +334,14 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFC9F0F9),
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -407,20 +407,20 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed(HomeWidget.routeName);
                             },
-                            text: 'Sign In',
+                            text: 'update email',
                             options: FFButtonOptions(
                               width: 300.0,
                               height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: Color(0xFFC9F0F9),
+                              color: const Color(0xFFC9F0F9),
                               textStyle: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
@@ -450,9 +450,9 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                               animationsMap['buttonOnPageLoadAnimation']!),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: Container(
                               width: 300.0,
@@ -462,7 +462,7 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                                     .secondaryBackground,
                                 borderRadius: BorderRadius.circular(16.0),
                                 border: Border.all(
-                                  color: Color(0xFFC9F0F9),
+                                  color: const Color(0xFFC9F0F9),
                                 ),
                               ),
                               child: Row(
@@ -506,21 +506,21 @@ class _EditPhone0WidgetState extends State<EditPhone0Widget>
                                         .primaryText,
                                     size: 24.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 28.0)),
+                      ].divide(const SizedBox(height: 28.0)),
                     ),
                   ),
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.02, -1.18),
+              alignment: const AlignmentDirectional(0.02, -1.18),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 30.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(24.0),
                   child: Image.asset(

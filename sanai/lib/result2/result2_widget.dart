@@ -52,7 +52,7 @@ class _Result2WidgetState extends State<Result2Widget> {
             Container(
               width: double.infinity,
               height: 199.9,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                   stops: [0.0, 1.0],
@@ -63,7 +63,7 @@ class _Result2WidgetState extends State<Result2Widget> {
               child: Stack(
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Text(
                       'Result ',
                       style:
@@ -85,7 +85,7 @@ class _Result2WidgetState extends State<Result2Widget> {
                             .headlineSmall
                             .fontStyle,
                         shadows: [
-                          Shadow(
+                          const Shadow(
                             color: Color(0xFF8BC6D7),
                             offset: Offset(1.0, 1.0),
                             blurRadius: 1.0,
@@ -95,10 +95,10 @@ class _Result2WidgetState extends State<Result2Widget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-1.0, -1.0),
+                    alignment: const AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: FlutterFlowIconButton(
                         borderRadius: 8.0,
                         buttonSize: 40.0,
@@ -117,7 +117,7 @@ class _Result2WidgetState extends State<Result2Widget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 height: 700.0,
@@ -129,18 +129,18 @@ class _Result2WidgetState extends State<Result2Widget> {
                       'assets/images/4ed12adc1b3b6fa0e23f10d4bb5ddddc.jpg',
                     ).image,
                   ),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0x4400FFE4),
+                    color: const Color(0x4400FFE4),
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 100.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 100.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -154,7 +154,7 @@ class _Result2WidgetState extends State<Result2Widget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             'You are experiencing some stress, and that is completely normal, remember that expressing yourself is an important step toward feeling better.\n',
                             textAlign: TextAlign.center,
@@ -178,7 +178,7 @@ class _Result2WidgetState extends State<Result2Widget> {
                                   .titleSmall
                                   .fontStyle,
                               shadows: [
-                                Shadow(
+                                const Shadow(
                                   color: Color(0x7DBA9035),
                                   offset: Offset(1.0, 1.0),
                                   blurRadius: 1.0,

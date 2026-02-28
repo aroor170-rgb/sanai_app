@@ -52,7 +52,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
           leading: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: FlutterFlowIconButton(
               borderRadius: 12.0,
               buttonSize: 40.0,
@@ -80,7 +80,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                       FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -90,7 +90,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
                 child: ListView(
                   padding: EdgeInsets.zero,
                   shrinkWrap: true,
@@ -98,7 +98,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -117,13 +117,13 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Container(
                                     width: 12.0,
@@ -277,12 +277,12 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                                               .fontStyle,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 8.0,
                                             buttonSize: 32.0,
-                                            fillColor: Color(0x4C0E84A5),
+                                            fillColor: const Color(0x4C0E84A5),
                                             icon: Icon(
                                               Icons.edit_rounded,
                                               color:
@@ -297,7 +297,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ],
@@ -308,7 +308,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -327,13 +327,13 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Container(
                                     width: 12.0,
@@ -457,12 +457,12 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                                               .fontStyle,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 8.0,
                                             buttonSize: 32.0,
-                                            fillColor: Color(0x4C0E84A5),
+                                            fillColor: const Color(0x4C0E84A5),
                                             icon: Icon(
                                               Icons.edit_rounded,
                                               color:
@@ -477,7 +477,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ],
@@ -488,7 +488,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -507,13 +507,13 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Container(
                                     width: 12.0,
@@ -637,12 +637,12 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                                               .fontStyle,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 8.0,
                                             buttonSize: 32.0,
-                                            fillColor: Color(0x4C0E84A5),
+                                            fillColor: const Color(0x4C0E84A5),
                                             icon: Icon(
                                               Icons.edit_rounded,
                                               color:
@@ -657,7 +657,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ],
@@ -668,7 +668,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -687,13 +687,13 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Container(
                                     width: 12.0,
@@ -816,12 +816,12 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                                               .fontStyle,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 8.0,
                                             buttonSize: 32.0,
-                                            fillColor: Color(0x4C0E84A5),
+                                            fillColor: const Color(0x4C0E84A5),
                                             icon: Icon(
                                               Icons.edit_rounded,
                                               color:
@@ -836,7 +836,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ],
@@ -847,7 +847,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -872,9 +872,9 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.97),
+                alignment: const AlignmentDirectional(0.0, 0.97),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -902,7 +902,7 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                             .primaryText,
                                         size: 30.0,
                                       ),
-                                    ].divide(SizedBox(width: 10.0)),
+                                    ].divide(const SizedBox(width: 10.0)),
                                   ),
                                   Icon(
                                     Icons.zoom_in,
@@ -910,11 +910,11 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                                         .primaryText,
                                     size: 30.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
-                            ].divide(SizedBox(width: 10.0)),
+                            ].divide(const SizedBox(width: 10.0)),
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                       Icon(
                         Icons.zoom_out,
@@ -932,8 +932,8 @@ class _EditRemEWidgetState extends State<EditRemEWidget> {
                         size: 30.0,
                       ),
                     ]
-                        .divide(SizedBox(width: 10.0))
-                        .around(SizedBox(width: 10.0)),
+                        .divide(const SizedBox(width: 10.0))
+                        .around(const SizedBox(width: 10.0)),
                   ),
                 ),
               ),

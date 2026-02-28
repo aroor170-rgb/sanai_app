@@ -82,14 +82,14 @@ class _HospitalsFamilyIssueWidgetState
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
             child: ListView(
               padding: EdgeInsets.zero,
               shrinkWrap: true,
@@ -100,7 +100,7 @@ class _HospitalsFamilyIssueWidgetState
                   height: 130.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -110,7 +110,7 @@ class _HospitalsFamilyIssueWidgetState
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -119,7 +119,7 @@ class _HospitalsFamilyIssueWidgetState
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -150,7 +150,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -173,7 +173,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -185,7 +185,7 @@ class _HospitalsFamilyIssueWidgetState
                             ),
                           ],
                         ),
-                      ].divide(SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
@@ -194,7 +194,7 @@ class _HospitalsFamilyIssueWidgetState
                   height: 130.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -204,7 +204,7 @@ class _HospitalsFamilyIssueWidgetState
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -213,7 +213,7 @@ class _HospitalsFamilyIssueWidgetState
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -243,7 +243,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -266,7 +266,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -278,7 +278,7 @@ class _HospitalsFamilyIssueWidgetState
                             ),
                           ],
                         ),
-                      ].divide(SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
@@ -287,7 +287,7 @@ class _HospitalsFamilyIssueWidgetState
                   height: 130.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -297,7 +297,7 @@ class _HospitalsFamilyIssueWidgetState
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -306,7 +306,7 @@ class _HospitalsFamilyIssueWidgetState
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -336,7 +336,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -359,7 +359,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -371,7 +371,7 @@ class _HospitalsFamilyIssueWidgetState
                             ),
                           ],
                         ),
-                      ].divide(SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
@@ -380,7 +380,7 @@ class _HospitalsFamilyIssueWidgetState
                   height: 130.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x33000000),
@@ -390,7 +390,7 @@ class _HospitalsFamilyIssueWidgetState
                         ),
                       )
                     ],
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -399,7 +399,7 @@ class _HospitalsFamilyIssueWidgetState
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -430,7 +430,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -453,7 +453,7 @@ class _HospitalsFamilyIssueWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -465,11 +465,11 @@ class _HospitalsFamilyIssueWidgetState
                             ),
                           ],
                         ),
-                      ].divide(SizedBox(width: 10.0)),
+                      ].divide(const SizedBox(width: 10.0)),
                     ),
                   ),
                 ),
-              ].divide(SizedBox(height: 20.0)),
+              ].divide(const SizedBox(height: 20.0)),
             ),
           ),
         ),

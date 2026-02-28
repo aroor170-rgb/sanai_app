@@ -58,11 +58,11 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(1.26, -1.0),
+                      alignment: const AlignmentDirectional(1.26, -1.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
@@ -74,7 +74,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-0.3, 0.76),
+                      alignment: const AlignmentDirectional(-0.3, 0.76),
                       child: Container(
                         width: 300.0,
                         height: 200.0,
@@ -85,7 +85,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                         child: Stack(
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.asset(
@@ -101,7 +101,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-0.19, -0.89),
+                      alignment: const AlignmentDirectional(-0.19, -0.89),
                       child: Text(
                         'how dose the mood test work?',
                         textAlign: TextAlign.center,
@@ -114,7 +114,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                                     .titleSmall
                                     .fontStyle,
                               ),
-                              color: Color(0xFF3F5C57),
+                              color: const Color(0xFF3F5C57),
                               fontSize: 21.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
@@ -127,15 +127,15 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 690.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   100.0, 0.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
@@ -178,7 +178,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                                         .primaryText,
                                     size: 26.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
                             ),
                           ],
@@ -186,7 +186,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-1.02, -0.93),
+                      alignment: const AlignmentDirectional(-1.02, -0.93),
                       child: FlutterFlowIconButton(
                         borderRadius: 29.0,
                         buttonSize: 49.0,
@@ -204,23 +204,23 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.13, 0.08),
+                alignment: const AlignmentDirectional(-0.13, 0.08),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 155.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 155.0),
                   child: Container(
                     width: 350.0,
                     height: 359.85,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          Color(0xFFB8DFE7),
+                          const Color(0xFFB8DFE7),
                           FlutterFlowTheme.of(context).primaryBackground
                         ],
-                        stops: [0.0, 1.0],
-                        begin: AlignmentDirectional(0.0, -1.0),
-                        end: AlignmentDirectional(0, 1.0),
+                        stops: const [0.0, 1.0],
+                        begin: const AlignmentDirectional(0.0, -1.0),
+                        end: const AlignmentDirectional(0, 1.0),
                       ),
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(10.0),
                         bottomRight: Radius.circular(10.0),
                         topLeft: Radius.circular(10.0),
@@ -230,7 +230,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                     child: Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -0.59),
+                          alignment: const AlignmentDirectional(0.0, -0.59),
                           child: Text(
                             'The mood test consists of a set of simple questions where you are asked to choose an emoji that expresses your current feeling in different situations.\n\n After you answer the questions, the system analyzes and compiles your choices to determine your overall mood\n\nfor example:\nHappy, Moody, Sad, or Calm.\n\nAt the end, you will see the result along with a short statement and a tip tailored to your mood to help you improve or maintain it!',
                             textAlign: TextAlign.start,
@@ -245,7 +245,7 @@ class _FaqA1WidgetState extends State<FaqA1Widget> {
                                         .titleSmall
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF3F5C57),
+                                  color: const Color(0xFF3F5C57),
                                   fontSize: 18.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)

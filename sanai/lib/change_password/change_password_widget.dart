@@ -50,8 +50,8 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -78,11 +78,11 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
         body: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, -1.14),
+              alignment: const AlignmentDirectional(0.0, -1.14),
               child: Container(
                 width: double.infinity,
                 height: 280.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF92CCDA), Color(0xFFC9F1F1)],
                     stops: [0.0, 1.0],
@@ -93,24 +93,24 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 height: 650.0,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0xFFC9F0F9),
+                    color: const Color(0xFFC9F0F9),
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -124,9 +124,9 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 50.0, 0.0, 0.0),
                             child: Text(
                               'Change Password\n',
@@ -147,7 +147,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                     .headlineLarge
                                     .fontStyle,
                                 shadows: [
-                                  Shadow(
+                                  const Shadow(
                                     color: Color(0x7236CBB3),
                                     offset: Offset(1.0, 1.0),
                                     blurRadius: 1.0,
@@ -158,9 +158,9 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
-                          child: Container(
+                          child: SizedBox(
                             width: 300.0,
                             child: TextFormField(
                               controller: _model.textController1,
@@ -210,14 +210,14 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFF8BC6D7),
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -283,9 +283,9 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
-                          child: Container(
+                          child: SizedBox(
                             width: 300.0,
                             child: TextFormField(
                               controller: _model.textController2,
@@ -335,14 +335,14 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFF8BC6D7),
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
@@ -408,7 +408,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
@@ -418,11 +418,11 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                             options: FFButtonOptions(
                               width: 300.0,
                               height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: Color(0xFFC9F0F9),
+                              color: const Color(0xFFC9F0F9),
                               textStyle: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
@@ -434,7 +434,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                           .headlineSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -451,7 +451,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                               animationsMap['buttonOnPageLoadAnimation']!),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
                             focusColor: Colors.transparent,
@@ -472,7 +472,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                       .headlineLarge
                                       .fontStyle,
                                 ),
-                                color: Color(0xFF105A4A),
+                                color: const Color(0xFF105A4A),
                                 fontSize: 17.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
@@ -480,7 +480,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                     .headlineLarge
                                     .fontStyle,
                                 shadows: [
-                                  Shadow(
+                                  const Shadow(
                                     color: Color(0x7236CBB3),
                                     offset: Offset(1.0, 1.0),
                                     blurRadius: 1.0,
@@ -491,7 +491,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: Container(
                             width: 300.0,
@@ -501,7 +501,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                   .secondaryBackground,
                               borderRadius: BorderRadius.circular(16.0),
                               border: Border.all(
-                                color: Color(0xFFC9F0F9),
+                                color: const Color(0xFFC9F0F9),
                               ),
                             ),
                             child: Row(
@@ -545,20 +545,20 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                       FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
-                              ].divide(SizedBox(width: 10.0)),
+                              ].divide(const SizedBox(width: 10.0)),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 20.0)),
+                      ].divide(const SizedBox(height: 20.0)),
                     ),
                   ),
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.02, -1.32),
+              alignment: const AlignmentDirectional(-0.02, -1.32),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 30.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(24.0),
                   child: Image.asset(

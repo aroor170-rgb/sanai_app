@@ -53,11 +53,11 @@ class _CameraWidgetState extends State<CameraWidget> {
         child: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, -1.22),
+              alignment: const AlignmentDirectional(0.0, -1.22),
               child: Container(
                 width: double.infinity,
                 height: 190.24,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                     stops: [0.0, 1.0],
@@ -71,17 +71,17 @@ class _CameraWidgetState extends State<CameraWidget> {
                     topRight: Radius.circular(0.0),
                   ),
                 ),
-                alignment: AlignmentDirectional(-1.0, -1.0),
+                alignment: const AlignmentDirectional(-1.0, -1.0),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.74),
+              alignment: const AlignmentDirectional(0.0, 1.74),
               child: Container(
                 width: double.infinity,
                 height: 720.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(70.0),
@@ -91,7 +91,7 @@ class _CameraWidgetState extends State<CameraWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.02, -0.53),
+              alignment: const AlignmentDirectional(-0.02, -0.53),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.asset(
@@ -103,7 +103,7 @@ class _CameraWidgetState extends State<CameraWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.18, -0.05),
+              alignment: const AlignmentDirectional(0.18, -0.05),
               child: Text(
                 'Facial Expression Analysis via Camera',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -122,7 +122,7 @@ class _CameraWidgetState extends State<CameraWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.35, 0.14),
+              alignment: const AlignmentDirectional(0.35, 0.14),
               child: Text(
                 'This service provides facial expression analysis through the camera and displays instant analysis results.',
                 textAlign: TextAlign.center,
@@ -132,7 +132,7 @@ class _CameraWidgetState extends State<CameraWidget> {
                         fontStyle:
                             FlutterFlowTheme.of(context).titleSmall.fontStyle,
                       ),
-                      color: Color(0xFF105A4A),
+                      color: const Color(0xFF105A4A),
                       fontSize: 20.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
@@ -142,7 +142,7 @@ class _CameraWidgetState extends State<CameraWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.04, 0.53),
+              alignment: const AlignmentDirectional(-0.04, 0.53),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed(CamerINTWidget.routeName);
@@ -151,10 +151,10 @@ class _CameraWidgetState extends State<CameraWidget> {
                 options: FFButtonOptions(
                   width: 300.0,
                   height: 40.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: Color(0xFFC9F0F9),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: const Color(0xFFC9F0F9),
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         font: GoogleFonts.interTight(
                           fontWeight: FlutterFlowTheme.of(context)
@@ -163,7 +163,7 @@ class _CameraWidgetState extends State<CameraWidget> {
                           fontStyle:
                               FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
-                        color: Color(0xFF105A4A),
+                        color: const Color(0xFF105A4A),
                         fontSize: 20.0,
                         letterSpacing: 0.0,
                         fontWeight:
@@ -177,11 +177,11 @@ class _CameraWidgetState extends State<CameraWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-1.0, -1.0),
+              alignment: const AlignmentDirectional(-1.0, -1.0),
               child: FlutterFlowIconButton(
                 borderRadius: 8.0,
                 buttonSize: 40.0,
-                fillColor: Color(0x0008DCC6),
+                fillColor: const Color(0x0008DCC6),
                 icon: Icon(
                   Icons.arrow_back,
                   color: FlutterFlowTheme.of(context).info,

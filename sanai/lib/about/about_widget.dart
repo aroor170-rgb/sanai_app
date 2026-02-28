@@ -6,7 +6,6 @@ import '/index.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'about_model.dart';
@@ -24,6 +23,7 @@ class AboutWidget extends StatefulWidget {
 
 class _AboutWidgetState extends State<AboutWidget> {
   late AboutModel _model;
+  int _currentPage = 0;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -31,17 +31,11 @@ class _AboutWidgetState extends State<AboutWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => AboutModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.pushNamed(HomeWidget.routeName);
-    });
   }
 
   @override
   void dispose() {
     _model.dispose();
-
     super.dispose();
   }
 
@@ -58,46 +52,51 @@ class _AboutWidgetState extends State<AboutWidget> {
         body: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Container(
                 width: double.infinity,
                 height: 900.0,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                     stops: [0.0, 1.0],
                     begin: AlignmentDirectional(0.0, -1.0),
                     end: AlignmentDirectional(0, 1.0),
                   ),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(0.0),
                     topRight: Radius.circular(0.0),
                   ),
                   border: Border.all(
-                    color: Color(0xFF2B274F),
+                    color: const Color(0xFF2B274F),
                   ),
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
-              child: Container(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: SizedBox(
                 width: double.infinity,
                 height: 500.0,
                 child: Stack(
                   children: [
                     Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          0.0, 0.0, 0.0, 40.0),
                       child: PageView(
                         controller: _model.pageViewController ??=
                             PageController(initialPage: 0),
                         scrollDirection: Axis.horizontal,
+                        onPageChanged: (i) {
+                          setState(() {
+                            _currentPage = i;
+                          });
+                        },
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -113,34 +112,37 @@ class _AboutWidgetState extends State<AboutWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment:
+                                      const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'تطــبيق ذكي يساعــدك على الــتعبير \nعن مشــاعرك وفهــم نفسـك بطريــقة آمنــة',
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                      font: GoogleFonts.inter(
-                                        fontWeight: FontWeight.w600,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .labelSmall
-                                            .fontStyle,
-                                      ),
-                                      color: Color(0xFF105A4A),
-                                      fontSize: 15.0,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .labelSmall
-                                          .fontStyle,
-                                      shadows: [
-                                        Shadow(
-                                          color: Color(0xFF8BC6D7),
-                                          offset: Offset(2.0, 2.0),
-                                          blurRadius: 2.0,
-                                        )
-                                      ],
-                                    ),
+                                          font: GoogleFonts.inter(
+                                            fontWeight: FontWeight.w600,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelSmall
+                                                    .fontStyle,
+                                          ),
+                                          color: const Color(0xFF105A4A),
+                                          fontSize: 15.0,
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelSmall
+                                                  .fontStyle,
+                                          shadows: const [
+                                            Shadow(
+                                              color: Color(0xFF8BC6D7),
+                                              offset: Offset(2.0, 2.0),
+                                              blurRadius: 2.0,
+                                            )
+                                          ],
+                                        ),
                                   ),
                                 ),
                               ],
@@ -160,34 +162,37 @@ class _AboutWidgetState extends State<AboutWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment:
+                                    const AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   'مســاحة للتعبير عن مشــاعرك بكامــل الخصـوصية',
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .labelSmall
-                                          .fontStyle,
-                                    ),
-                                    color: Color(0xFF105A4A),
-                                    fontSize: 15.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .labelSmall
-                                        .fontStyle,
-                                    shadows: [
-                                      Shadow(
-                                        color: Color(0xFF8BC6D7),
-                                        offset: Offset(2.0, 2.0),
-                                        blurRadius: 2.0,
-                                      )
-                                    ],
-                                  ),
+                                        font: GoogleFonts.inter(
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: const Color(0xFF105A4A),
+                                        fontSize: 15.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                        fontStyle:
+                                            FlutterFlowTheme.of(context)
+                                                .labelSmall
+                                                .fontStyle,
+                                        shadows: const [
+                                          Shadow(
+                                            color: Color(0xFF8BC6D7),
+                                            offset: Offset(2.0, 2.0),
+                                            blurRadius: 2.0,
+                                          )
+                                        ],
+                                      ),
                                 ),
                               ),
                             ],
@@ -206,7 +211,7 @@ class _AboutWidgetState extends State<AboutWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 20.0, 0.0),
                                 child: Text(
                                   'مع سَنــايـ أكتـشف راحـة البــال  واستـمتــع بحيــاة أكثـر توازنًــا  وسعــادة ',
@@ -214,27 +219,29 @@ class _AboutWidgetState extends State<AboutWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .labelSmall
-                                          .fontStyle,
-                                    ),
-                                    color: Color(0xFF105A4A),
-                                    fontSize: 15.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .labelSmall
-                                        .fontStyle,
-                                    shadows: [
-                                      Shadow(
-                                        color: Color(0xFF8BC6D7),
-                                        offset: Offset(2.0, 2.0),
-                                        blurRadius: 2.0,
-                                      )
-                                    ],
-                                  ),
+                                        font: GoogleFonts.inter(
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: const Color(0xFF105A4A),
+                                        fontSize: 15.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                        fontStyle:
+                                            FlutterFlowTheme.of(context)
+                                                .labelSmall
+                                                .fontStyle,
+                                        shadows: const [
+                                          Shadow(
+                                            color: Color(0xFF8BC6D7),
+                                            offset: Offset(2.0, 2.0),
+                                            blurRadius: 2.0,
+                                          )
+                                        ],
+                                      ),
                                 ),
                               ),
                             ],
@@ -243,10 +250,10 @@ class _AboutWidgetState extends State<AboutWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 0.0, 0.0, 16.0),
                         child: smooth_page_indicator.SmoothPageIndicator(
                           controller: _model.pageViewController ??=
                               PageController(initialPage: 0),
@@ -255,12 +262,12 @@ class _AboutWidgetState extends State<AboutWidget> {
                           onDotClicked: (i) async {
                             await _model.pageViewController!.animateToPage(
                               i,
-                              duration: Duration(milliseconds: 500),
+                              duration: const Duration(milliseconds: 500),
                               curve: Curves.ease,
                             );
                             safeSetState(() {});
                           },
-                          effect: smooth_page_indicator.SlideEffect(
+                          effect: const smooth_page_indicator.SlideEffect(
                             spacing: 8.0,
                             radius: 8.0,
                             dotWidth: 8.0,
@@ -276,6 +283,32 @@ class _AboutWidgetState extends State<AboutWidget> {
                 ),
               ),
             ),
+            // GET STARTED BUTTON — only shows on last slide
+            if (_currentPage == 2)
+              Align(
+                alignment: const AlignmentDirectional(0.0, 1.0),
+                child: Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      24.0, 0.0, 24.0, 60.0),
+                  child: FFButtonWidget(
+                    onPressed: () {
+                      context.pushNamed(RegisterCopyWidget.routeName);
+                    },
+                    text: 'ابدأ الآن',
+                    options: FFButtonOptions(
+                      width: double.infinity,
+                      height: 50.0,
+                      color: const Color(0xFF105A4A),
+                      textStyle: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                  ),
+                ),
+              ),
           ],
         ),
       ),

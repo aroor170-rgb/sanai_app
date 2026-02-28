@@ -68,7 +68,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                       FlutterFlowTheme.of(context).headlineSmall.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -79,14 +79,14 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
                 child: ListView(
                   padding: EdgeInsets.zero,
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
                   children: [
                     Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
@@ -99,7 +99,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                         ],
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Text(
                           'What is Addiction?',
@@ -113,7 +113,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -129,7 +129,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Text(
                         'Addiction is a psychological and physical condition in which a person becomes dependent on a certain substance (such as drugs or alcohol) or behavior compulsively, negatively affecting their life.',
                         style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -141,7 +141,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                                     .labelLarge
                                     .fontStyle,
                               ),
-                              color: Color(0x86105A4A),
+                              color: const Color(0x86105A4A),
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .labelLarge
@@ -154,7 +154,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
@@ -167,7 +167,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                         ],
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Text(
                           ' Symptoms:',
@@ -181,7 +181,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -196,9 +196,9 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Text(
                           'Strong and persistent craving for the substance or behavior\n\nDifficulty stopping despite the consequences\n\nLoss of control over behavior\n\nWithdrawal symptoms when stopping\n\nNeglect of social or work life',
@@ -212,7 +212,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0x86105A4A),
+                                    color: const Color(0x86105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelLarge
@@ -225,7 +225,7 @@ class _AddictionDefinitionWidgetState extends State<AddictionDefinitionWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 10.0)),
+                  ].divide(const SizedBox(height: 10.0)),
                 ),
               ),
             ],

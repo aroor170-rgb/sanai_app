@@ -34,11 +34,6 @@ class AppStateNotifier extends ChangeNotifier {
   bool showSplashImage = true;
   String? _redirectLocation;
 
-  /// Determines whether the app will refresh and build again when a sign
-  /// in or sign out happens. This is useful when the app is launched or
-  /// on an unexpected logout. However, this must be turned off when we
-  /// intend to sign in/out and then navigate or perform any actions after.
-  /// Otherwise, this will trigger a refresh and interrupt the action(s).
   bool notifyOnAuthChange = true;
 
   bool get loading => user == null || showSplashImage;
@@ -51,8 +46,6 @@ class AppStateNotifier extends ChangeNotifier {
   void setRedirectLocationIfUnset(String loc) => _redirectLocation ??= loc;
   void clearRedirectLocation() => _redirectLocation = null;
 
-  /// Mark as not needing to notify on a sign in / out when we intend
-  /// to perform subsequent actions (such as navigation) afterwards.
   void updateNotifyOnAuthChange(bool notify) => notifyOnAuthChange = notify;
 
   void update(BaseAuthUser newUser) {
@@ -60,13 +53,9 @@ class AppStateNotifier extends ChangeNotifier {
         user?.uid == null || newUser.uid == null || user?.uid != newUser.uid;
     initialUser ??= newUser;
     user = newUser;
-    // Refresh the app on auth change unless explicitly marked otherwise.
-    // No need to update unless the user has changed.
     if (notifyOnAuthChange && shouldUpdate) {
       notifyListeners();
     }
-    // Once again mark the notifier as needing to update on auth change
-    // (in order to catch sign in / out events).
     updateNotifyOnAuthChange(true);
   }
 
@@ -82,309 +71,307 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : RegisterCopyWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : const ChooseLanguageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : RegisterCopyWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : const ChooseLanguageWidget(),
         ),
         FFRoute(
           name: LoginWidget.routeName,
           path: LoginWidget.routePath,
-          builder: (context, params) => LoginWidget(),
+          builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
           name: ResultWidget.routeName,
           path: ResultWidget.routePath,
-          builder: (context, params) => ResultWidget(),
+          builder: (context, params) => const ResultWidget(),
         ),
         FFRoute(
           name: Result2Widget.routeName,
           path: Result2Widget.routePath,
-          builder: (context, params) => Result2Widget(),
+          builder: (context, params) => const Result2Widget(),
         ),
-        
-FFRoute(
-  name: 'quickAccessPin',
-  path: '/quickAccessPin',
-  builder: (context, params) => const QuickAccessPinWidget(),
-),
+        FFRoute(
+          name: 'quickAccessPin',
+          path: '/quickAccessPin',
+          builder: (context, params) => const QuickAccessPinWidget(),
+        ),
         FFRoute(
           name: AboutWidget.routeName,
           path: AboutWidget.routePath,
-          builder: (context, params) => AboutWidget(),
+          builder: (context, params) => const AboutWidget(),
         ),
         FFRoute(
           name: TestWidget.routeName,
           path: TestWidget.routePath,
-          builder: (context, params) => TestWidget(),
+          builder: (context, params) => const TestWidget(),
         ),
         FFRoute(
           name: CaleanderWidget.routeName,
           path: CaleanderWidget.routePath,
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'caleander')
-              : CaleanderWidget(),
+              : const CaleanderWidget(),
         ),
         FFRoute(
           name: HomeWidget.routeName,
           path: HomeWidget.routePath,
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'home') : HomeWidget(),
+              params.isEmpty ? NavBarPage(initialPage: 'home') : const HomeWidget(),
         ),
         FFRoute(
           name: SetiingWidget.routeName,
           path: SetiingWidget.routePath,
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'setiing')
-              : SetiingWidget(),
+              : const SetiingWidget(),
         ),
         FFRoute(
           name: AdminWidget.routeName,
           path: AdminWidget.routePath,
-          builder: (context, params) => AdminWidget(),
+          builder: (context, params) => const AdminWidget(),
         ),
         FFRoute(
           name: ChatWidget.routeName,
           path: ChatWidget.routePath,
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'chat') : ChatWidget(),
+              params.isEmpty ? NavBarPage(initialPage: 'chat') : const ChatWidget(),
         ),
         FFRoute(
           name: ProfileWidget.routeName,
           path: ProfileWidget.routePath,
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'profile')
-              : ProfileWidget(),
+              : const ProfileWidget(),
         ),
         FFRoute(
           name: RemindersWidget.routeName,
           path: RemindersWidget.routePath,
-          builder: (context, params) => RemindersWidget(),
+          builder: (context, params) => const RemindersWidget(),
         ),
         FFRoute(
           name: AppearnceWidget.routeName,
           path: AppearnceWidget.routePath,
-          builder: (context, params) => AppearnceWidget(),
+          builder: (context, params) => const AppearnceWidget(),
         ),
         FFRoute(
           name: SignoutWidget.routeName,
           path: SignoutWidget.routePath,
-          builder: (context, params) => SignoutWidget(),
+          builder: (context, params) => const SignoutWidget(),
         ),
         FFRoute(
           name: SignosuccessfulWidget.routeName,
           path: SignosuccessfulWidget.routePath,
-          builder: (context, params) => SignosuccessfulWidget(),
+          builder: (context, params) => const SignosuccessfulWidget(),
         ),
         FFRoute(
           name: CameraWidget.routeName,
           path: CameraWidget.routePath,
-          builder: (context, params) => CameraWidget(),
+          builder: (context, params) => const CameraWidget(),
         ),
         FFRoute(
           name: DrawingWidget.routeName,
           path: DrawingWidget.routePath,
-          builder: (context, params) => DrawingWidget(),
+          builder: (context, params) => const DrawingWidget(),
         ),
         FFRoute(
           name: EditPhone0Widget.routeName,
           path: EditPhone0Widget.routePath,
-          builder: (context, params) => EditPhone0Widget(),
+          builder: (context, params) => const EditPhone0Widget(),
         ),
         FFRoute(
           name: ChooseLanguageWidget.routeName,
           path: ChooseLanguageWidget.routePath,
-          builder: (context, params) => ChooseLanguageWidget(),
+          builder: (context, params) => const ChooseLanguageWidget(),
         ),
         FFRoute(
           name: ChangePasswordWidget.routeName,
           path: ChangePasswordWidget.routePath,
-          builder: (context, params) => ChangePasswordWidget(),
+          builder: (context, params) => const ChangePasswordWidget(),
         ),
         FFRoute(
           name: SignUpWidget.routeName,
           path: SignUpWidget.routePath,
-          builder: (context, params) => SignUpWidget(),
+          builder: (context, params) => const SignUpWidget(),
         ),
         FFRoute(
           name: AddReExeWidget.routeName,
           path: AddReExeWidget.routePath,
-          builder: (context, params) => AddReExeWidget(),
+          builder: (context, params) => const AddReExeWidget(),
         ),
         FFRoute(
           name: AddReMedWidget.routeName,
           path: AddReMedWidget.routePath,
-          builder: (context, params) => AddReMedWidget(),
+          builder: (context, params) => const AddReMedWidget(),
         ),
         FFRoute(
           name: AddReWaWidget.routeName,
           path: AddReWaWidget.routePath,
-          builder: (context, params) => AddReWaWidget(),
+          builder: (context, params) => const AddReWaWidget(),
         ),
         FFRoute(
           name: EditRemEWidget.routeName,
           path: EditRemEWidget.routePath,
-          builder: (context, params) => EditRemEWidget(),
+          builder: (context, params) => const EditRemEWidget(),
         ),
         FFRoute(
           name: EditRemWWidget.routeName,
           path: EditRemWWidget.routePath,
-          builder: (context, params) => EditRemWWidget(),
+          builder: (context, params) => const EditRemWWidget(),
         ),
         FFRoute(
           name: EditRemMWidget.routeName,
           path: EditRemMWidget.routePath,
-          builder: (context, params) => EditRemMWidget(),
+          builder: (context, params) => const EditRemMWidget(),
         ),
         FFRoute(
           name: EditActionMWidget.routeName,
           path: EditActionMWidget.routePath,
-          builder: (context, params) => EditActionMWidget(),
+          builder: (context, params) => const EditActionMWidget(),
         ),
         FFRoute(
           name: EditSavedWidget.routeName,
           path: EditSavedWidget.routePath,
-          builder: (context, params) => EditSavedWidget(),
+          builder: (context, params) => const EditSavedWidget(),
         ),
         FFRoute(
           name: TeamSupportWidget.routeName,
           path: TeamSupportWidget.routePath,
-          builder: (context, params) => TeamSupportWidget(),
+          builder: (context, params) => const TeamSupportWidget(),
         ),
-        
         FFRoute(
           name: RegisterCopyWidget.routeName,
           path: RegisterCopyWidget.routePath,
-          builder: (context, params) => RegisterCopyWidget(),
+          builder: (context, params) => const RegisterCopyWidget(),
         ),
         FFRoute(
           name: CamerINTWidget.routeName,
           path: CamerINTWidget.routePath,
-          builder: (context, params) => CamerINTWidget(),
+          builder: (context, params) => const CamerINTWidget(),
         ),
         FFRoute(
           name: Result1Widget.routeName,
           path: Result1Widget.routePath,
-          builder: (context, params) => Result1Widget(),
+          builder: (context, params) => const Result1Widget(),
         ),
         FFRoute(
           name: Admin1Widget.routeName,
           path: Admin1Widget.routePath,
-          builder: (context, params) => Admin1Widget(),
+          builder: (context, params) => const Admin1Widget(),
         ),
         FFRoute(
           name: EditActionEWidget.routeName,
           path: EditActionEWidget.routePath,
-          builder: (context, params) => EditActionEWidget(),
+          builder: (context, params) => const EditActionEWidget(),
         ),
         FFRoute(
           name: EditActionWWidget.routeName,
           path: EditActionWWidget.routePath,
-          builder: (context, params) => EditActionWWidget(),
+          builder: (context, params) => const EditActionWWidget(),
         ),
         FFRoute(
           name: EditRemovedWidget.routeName,
           path: EditRemovedWidget.routePath,
-          builder: (context, params) => EditRemovedWidget(),
+          builder: (context, params) => const EditRemovedWidget(),
         ),
         FFRoute(
           name: FaqA2Widget.routeName,
           path: FaqA2Widget.routePath,
-          builder: (context, params) => FaqA2Widget(),
+          builder: (context, params) => const FaqA2Widget(),
         ),
         FFRoute(
           name: MentalHealthGuidesWidget.routeName,
           path: MentalHealthGuidesWidget.routePath,
-          builder: (context, params) => MentalHealthGuidesWidget(),
+          builder: (context, params) => const MentalHealthGuidesWidget(),
         ),
         FFRoute(
           name: MedicationReminderWidget.routeName,
           path: MedicationReminderWidget.routePath,
-          builder: (context, params) => MedicationReminderWidget(),
+          builder: (context, params) => const MedicationReminderWidget(),
         ),
         FFRoute(
           name: ExercisesReminderWidget.routeName,
           path: ExercisesReminderWidget.routePath,
-          builder: (context, params) => ExercisesReminderWidget(),
+          builder: (context, params) => const ExercisesReminderWidget(),
         ),
         FFRoute(
           name: WaterReminderWidget.routeName,
           path: WaterReminderWidget.routePath,
-          builder: (context, params) => WaterReminderWidget(),
+          builder: (context, params) => const WaterReminderWidget(),
         ),
         FFRoute(
-          name: VoiceChatPageWidget.routeName,
-          path: VoiceChatPageWidget.routePath,
-          builder: (context, params) => VoiceChatPageWidget(),
+          name: 'voice_chat_page',
+          path: '/voiceChatPage',
+          builder: (context, params) => const VoiceChatPageWidget(),
         ),
         FFRoute(
           name: HospitalsListWidget.routeName,
           path: HospitalsListWidget.routePath,
-          builder: (context, params) => HospitalsListWidget(),
+          builder: (context, params) => const HospitalsListWidget(),
         ),
         FFRoute(
           name: SupportCenterWidget.routeName,
           path: SupportCenterWidget.routePath,
-          builder: (context, params) => SupportCenterWidget(),
+          builder: (context, params) => const SupportCenterWidget(),
         ),
         FFRoute(
           name: FaqWidget.routeName,
           path: FaqWidget.routePath,
-          builder: (context, params) => FaqWidget(),
+          builder: (context, params) => const FaqWidget(),
         ),
         FFRoute(
           name: DepressionWidget.routeName,
           path: DepressionWidget.routePath,
-          builder: (context, params) => DepressionWidget(),
+          builder: (context, params) => const DepressionWidget(),
         ),
         FFRoute(
           name: SocailProblemsWidget.routeName,
           path: SocailProblemsWidget.routePath,
-          builder: (context, params) => SocailProblemsWidget(),
+          builder: (context, params) => const SocailProblemsWidget(),
         ),
         FFRoute(
           name: PsychologicalDisordersWidget.routeName,
           path: PsychologicalDisordersWidget.routePath,
-          builder: (context, params) => PsychologicalDisordersWidget(),
+          builder: (context, params) => const PsychologicalDisordersWidget(),
         ),
         FFRoute(
           name: DepressionDefinitionWidget.routeName,
           path: DepressionDefinitionWidget.routePath,
-          builder: (context, params) => DepressionDefinitionWidget(),
+          builder: (context, params) => const DepressionDefinitionWidget(),
         ),
         FFRoute(
           name: AddictionCopyWidget.routeName,
           path: AddictionCopyWidget.routePath,
-          builder: (context, params) => AddictionCopyWidget(),
+          builder: (context, params) => const AddictionCopyWidget(),
         ),
         FFRoute(
           name: FaqA3Widget.routeName,
           path: FaqA3Widget.routePath,
-          builder: (context, params) => FaqA3Widget(),
+          builder: (context, params) => const FaqA3Widget(),
         ),
         FFRoute(
           name: FaqA1Widget.routeName,
           path: FaqA1Widget.routePath,
-          builder: (context, params) => FaqA1Widget(),
+          builder: (context, params) => const FaqA1Widget(),
         ),
         FFRoute(
           name: BullyingDefinitionWidget.routeName,
           path: BullyingDefinitionWidget.routePath,
-          builder: (context, params) => BullyingDefinitionWidget(),
+          builder: (context, params) => const BullyingDefinitionWidget(),
         ),
         FFRoute(
           name: AddictionDefinitionWidget.routeName,
           path: AddictionDefinitionWidget.routePath,
-          builder: (context, params) => AddictionDefinitionWidget(),
+          builder: (context, params) => const AddictionDefinitionWidget(),
         ),
         FFRoute(
           name: HospitalsFamilyIssueWidget.routeName,
           path: HospitalsFamilyIssueWidget.routePath,
-          builder: (context, params) => HospitalsFamilyIssueWidget(),
-        )
+          builder: (context, params) => const HospitalsFamilyIssueWidget(),
+        ),
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 
@@ -432,8 +419,6 @@ extension NavigationExtensions on BuildContext {
             );
 
   void safePop() {
-    // If there is only one route on the stack, navigate to the initial
-    // page instead of popping.
     if (canPop()) {
       pop();
     } else {
@@ -475,8 +460,6 @@ class FFParameters {
 
   Map<String, dynamic> futureParamValues = {};
 
-  // Parameters are empty if the params map is empty or if the only parameter
-  // present is the special extra parameter reserved for the transition info.
   bool get isEmpty =>
       state.allParams.isEmpty ||
       (state.allParams.length == 1 &&
@@ -510,11 +493,9 @@ class FFParameters {
       return null;
     }
     final param = state.allParams[paramName];
-    // Got parameter from `extras`, so just directly return it.
     if (param is! String) {
       return param;
     }
-    // Return serialized value.
     return deserializeParam<T>(
       param,
       type,
@@ -549,7 +530,6 @@ class FFRoute {
             appStateNotifier.clearRedirectLocation();
             return redirectLocation;
           }
-
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
             return '/registerCopy';
@@ -578,7 +558,6 @@ class FFRoute {
                   ),
                 )
               : page;
-
           final transitionInfo = state.transitionInfo;
           return transitionInfo.hasTransition
               ? CustomTransitionPage(
@@ -619,7 +598,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

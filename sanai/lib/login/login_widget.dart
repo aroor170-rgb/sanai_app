@@ -55,8 +55,8 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -161,7 +161,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
             Container(
               width: double.infinity,
               height: 280.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                   stops: [0.0, 1.0],
@@ -170,9 +170,9 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                 ),
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -186,26 +186,26 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 height: 650.0,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0xFFC9F0F9),
+                    color: const Color(0xFFC9F0F9),
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -219,9 +219,9 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                               child: Text(
                                 'Welcome Back',
                                 style: FlutterFlowTheme.of(context).headlineLarge.override(
@@ -235,7 +235,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context).headlineLarge.fontStyle,
                                   shadows: [
-                                    Shadow(
+                                    const Shadow(
                                       color: Color(0xFF8BC6D7),
                                       offset: Offset(1.0, 1.0),
                                       blurRadius: 1.0,
@@ -246,8 +246,8 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
-                            child: Container(
+                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                            child: SizedBox(
                               width: 300.0,
                               child: TextFormField(
                                 controller: _model.textController1,
@@ -277,14 +277,14 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                         fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                       ),
                                   enabledBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0xFF8BC6D7),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -323,8 +323,8 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-                            child: Container(
+                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                            child: SizedBox(
                               width: 300.0,
                               child: TextFormField(
                                 controller: _model.textController2,
@@ -354,14 +354,14 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                         fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                       ),
                                   enabledBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0xFF8BC6D7),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -413,9 +413,9 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                           ),
 
                           Align(
-                            alignment: AlignmentDirectional(1.0, 0.0),
+                            alignment: const AlignmentDirectional(1.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                               child: Text(
                                 'Forgot Password ?',
                                 textAlign: TextAlign.center,
@@ -424,7 +424,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                         fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                         fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                       ),
-                                      color: Color(0xFF8BC6D7),
+                                      color: const Color(0xFF8BC6D7),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                       fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -435,15 +435,15 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                           ),
 
                           Align(
-                            alignment: AlignmentDirectional(1.0, 0.0),
+                            alignment: const AlignmentDirectional(1.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(1.0, 0.0),
+                                    alignment: const AlignmentDirectional(1.0, 0.0),
                                     child: Text(
                                       'Don\'t have account ?',
                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -451,7 +451,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                             ),
-                                            color: Color(0xFF8BC6D7),
+                                            color: const Color(0xFF8BC6D7),
                                             letterSpacing: 0.0,
                                             fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                             fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -459,7 +459,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(1.0, 0.0),
+                                    alignment: const AlignmentDirectional(1.0, 0.0),
                                     child: Text(
                                       'Create account',
                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -467,7 +467,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                               fontWeight: FontWeight.bold,
                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                             ),
-                                            color: Color(0xFF1F94BA),
+                                            color: const Color(0xFF1F94BA),
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                             fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -482,7 +482,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
 
                           // ✅ هنا التعديل الوحيد: زر Sign in صار يسوي Firebase Login + Errors
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 await _signIn();
@@ -491,15 +491,15 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                               options: FFButtonOptions(
                                 width: 300.0,
                                 height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFFC9F0F9),
+                                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                color: const Color(0xFFC9F0F9),
                                 textStyle: FlutterFlowTheme.of(context).headlineSmall.override(
                                       font: GoogleFonts.interTight(
                                         fontWeight: FlutterFlowTheme.of(context).headlineSmall.fontWeight,
                                         fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
                                       ),
-                                      color: Color(0xFF105A4A),
+                                      color: const Color(0xFF105A4A),
                                       fontSize: 20.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context).headlineSmall.fontWeight,
@@ -525,11 +525,11 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                           ),
 
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 1.0),
+                            alignment: const AlignmentDirectional(-1.0, 1.0),
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
   context.pushNamed('quickAccessPin');
@@ -538,22 +538,22 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                     options: FFButtonOptions(
                                       width: 300.0,
                                       height: 40.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                             font: GoogleFonts.interTight(
                                               fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
                                               fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                             ),
-                                            color: Color(0xFF105A4A),
+                                            color: const Color(0xFF105A4A),
                                             fontSize: 20.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
                                             fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                           ),
                                       elevation: 0.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0xFF8BC6D7),
                                       ),
                                       borderRadius: BorderRadius.circular(10.0),
@@ -565,7 +565,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                           ),
 
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                             child: Container(
                               width: 300.0,
                               height: 40.0,
@@ -573,7 +573,7 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                 color: FlutterFlowTheme.of(context).secondaryBackground,
                                 borderRadius: BorderRadius.circular(16.0),
                                 border: Border.all(
-                                  color: Color(0xFF8BC6D7),
+                                  color: const Color(0xFF8BC6D7),
                                 ),
                               ),
                               child: Row(
@@ -610,11 +610,11 @@ class _LoginWidgetState extends State<LoginWidget> with TickerProviderStateMixin
                                     color: FlutterFlowTheme.of(context).primaryText,
                                     size: 24.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 10.0)),
+                        ].divide(const SizedBox(height: 10.0)),
                       ),
                     ),
                   ),

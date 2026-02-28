@@ -46,11 +46,11 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
       body: Stack(
         children: [
           Align(
-            alignment: AlignmentDirectional(0.0, -1.0),
+            alignment: const AlignmentDirectional(0.0, -1.0),
             child: Container(
               width: double.infinity,
               height: 520.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                   stops: [0.0, 1.0],
@@ -59,7 +59,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(24.0),
                   child: Image.asset(
@@ -73,35 +73,35 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0.0, 1.0),
+            alignment: const AlignmentDirectional(0.0, 1.0),
             child: Container(
               width: double.infinity,
               height: 500.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(50.0),
                   topRight: Radius.circular(50.0),
                 ),
                 border: Border.all(
-                  color: Color(0xFFC9F0F9),
+                  color: const Color(0xFFC9F0F9),
                 ),
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
                           child: Text(
                             'Choose Language ',
@@ -116,7 +116,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                                     .headlineSmall
                                     .fontStyle,
                               ),
-                              color: Color(0xFF105A4A),
+                              color: const Color(0xFF105A4A),
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .headlineSmall
@@ -125,7 +125,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                                   .headlineSmall
                                   .fontStyle,
                               shadows: [
-                                Shadow(
+                                const Shadow(
                                   color: Color(0xFF0DB9E9),
                                   offset: Offset(1.0, 1.0),
                                   blurRadius: 1.0,
@@ -158,7 +158,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                                         .primaryText,
                                   ),
                                 ),
-                                duration: Duration(milliseconds: 4000),
+                                duration: const Duration(milliseconds: 4000),
                                 backgroundColor:
                                     FlutterFlowTheme.of(context).secondary,
                               ),
@@ -173,24 +173,24 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                                         .primaryText,
                                   ),
                                 ),
-                                duration: Duration(milliseconds: 4000),
+                                duration: const Duration(milliseconds: 4000),
                                 backgroundColor:
                                     FlutterFlowTheme.of(context).secondary,
                               ),
                             );
                           }
-
-                          safeSetState(() {});
+context.pushNamed('about');
+safeSetState(() {});
                         },
                         text: 'العربية',
                         options: FFButtonOptions(
                           width: 300.0,
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFC9F0F9),
+                          color: const Color(0xFFC9F0F9),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     font: GoogleFonts.interTight(
@@ -201,7 +201,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -226,17 +226,17 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          context.pushNamed(LoginWidget.routeName);
+                          context.pushNamed('about');
                         },
                         text: 'English',
                         options: FFButtonOptions(
                           width: 300.0,
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFC9F0F9),
+                          color: const Color(0xFFC9F0F9),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     font: GoogleFonts.interTight(
@@ -247,7 +247,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -269,7 +269,7 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                           borderRadius: BorderRadius.circular(16.0),
                           border: Border.all(
-                            color: Color(0xFFC9F0F9),
+                            color: const Color(0xFFC9F0F9),
                           ),
                         ),
                         child: Row(
@@ -306,12 +306,12 @@ class _ChooseLanguageWidgetState extends State<ChooseLanguageWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 20.0))
-                        .around(SizedBox(height: 20.0)),
+                        .divide(const SizedBox(height: 20.0))
+                        .around(const SizedBox(height: 20.0)),
                   ),
                 ),
               ),

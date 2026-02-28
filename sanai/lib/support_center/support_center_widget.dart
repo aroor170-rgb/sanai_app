@@ -70,7 +70,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -80,7 +80,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 0.0),
                 child: Text(
                   'Hi there',
                   style: FlutterFlowTheme.of(context).titleMedium.override(
@@ -102,7 +102,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'How can we support you today?',
                   style: FlutterFlowTheme.of(context).titleMedium.override(
@@ -131,7 +131,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -143,7 +143,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                       child: Container(
                         width: 100.0,
                         height: 95.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -166,7 +166,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.help_outline,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -177,7 +177,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 1.0, 0.0),
                                   child: Text(
                                     'Frequently Asked Questions',
@@ -194,7 +194,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -222,7 +222,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -234,14 +234,14 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(width: 15.0)),
+                          ].divide(const SizedBox(width: 15.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -253,7 +253,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                       child: Container(
                         width: 100.0,
                         height: 95.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -276,7 +276,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.chat_bubble,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -287,7 +287,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 1.0, 0.0),
                                   child: Text(
                                     'Send Us a Message',
@@ -304,7 +304,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -332,7 +332,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -344,18 +344,18 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(width: 15.0)),
+                          ].divide(const SizedBox(width: 15.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Container(
                       width: 100.0,
                       height: 95.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFC9F0F9),
                         boxShadow: [
                           BoxShadow(
@@ -378,7 +378,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.security,
                             color: Color(0xFF105A4A),
                             size: 30.0,
@@ -389,7 +389,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 1.0, 0.0),
                                 child: Text(
                                   'Privacy Policy',
@@ -406,7 +406,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -430,7 +430,7 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0x86105A4A),
+                                      color: const Color(0x86105A4A),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -442,11 +442,11 @@ class _SupportCenterWidgetState extends State<SupportCenterWidget> {
                               ),
                             ],
                           ),
-                        ].divide(SizedBox(width: 15.0)),
+                        ].divide(const SizedBox(width: 15.0)),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 10.0)),
+                ].divide(const SizedBox(height: 10.0)),
               ),
             ],
           ),

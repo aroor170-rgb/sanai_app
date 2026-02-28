@@ -54,7 +54,7 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
             Container(
               width: double.infinity,
               height: 136.86,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                   stops: [0.0, 1.0],
@@ -63,15 +63,15 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                 ),
               ),
               child: Align(
-                alignment: AlignmentDirectional(-1.0, 0.0),
+                alignment: const AlignmentDirectional(-1.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 0.0),
                           child: Text(
                             'Calendar',
@@ -95,7 +95,7 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                   .headlineLarge
                                   .fontStyle,
                               shadows: [
-                                Shadow(
+                                const Shadow(
                                   color: Color(0xFF8BC6D7),
                                   offset: Offset(1.0, 1.0),
                                   blurRadius: 1.0,
@@ -107,7 +107,7 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                         child: FlutterFlowIconButton(
                           borderRadius: 8.0,
                           buttonSize: 40.0,
@@ -127,34 +127,34 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.08),
+              alignment: const AlignmentDirectional(0.0, 1.08),
               child: Container(
                 width: double.infinity,
                 height: 760.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0xFFC9F0F9),
+                    color: const Color(0xFFC9F0F9),
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 0.0),
                           child: FlutterFlowCalendar(
-                            color: Color(0xFF8BC6D7),
+                            color: const Color(0xFF8BC6D7),
                             iconColor:
                                 FlutterFlowTheme.of(context).secondaryText,
                             weekFormat: false,
@@ -261,7 +261,7 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Material(
                             color: Colors.transparent,
@@ -281,19 +281,19 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Container(
                                         width: 12.0,
                                         height: 100.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFF76FFB5),
+                                          color: const Color(0xFF76FFB5),
                                           borderRadius:
                                               BorderRadius.circular(6.0),
                                         ),
@@ -451,11 +451,11 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                                                   .fontStyle,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ],
@@ -465,7 +465,7 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Material(
                             color: Colors.transparent,
@@ -485,19 +485,19 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Container(
                                         width: 12.0,
                                         height: 100.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x85FF6AA4),
+                                          color: const Color(0x85FF6AA4),
                                           borderRadius:
                                               BorderRadius.circular(6.0),
                                         ),
@@ -655,11 +655,11 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                                                   .fontStyle,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ],
@@ -669,7 +669,7 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Material(
                             color: Colors.transparent,
@@ -689,19 +689,19 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Container(
                                         width: 12.0,
                                         height: 100.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFBEC585A),
+                                          color: const Color(0xFBEC585A),
                                           borderRadius:
                                               BorderRadius.circular(6.0),
                                         ),
@@ -859,11 +859,11 @@ class _CaleanderWidgetState extends State<CaleanderWidget> {
                                                                   .fontStyle,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 4.0)),
+                                                ].divide(const SizedBox(width: 4.0)),
                                               ),
                                             ],
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ],

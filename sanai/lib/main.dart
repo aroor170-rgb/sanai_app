@@ -28,6 +28,8 @@ void main() async {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   State<MyApp> createState() => _MyAppState();
@@ -68,7 +70,7 @@ class _MyAppState extends State<MyApp> {
       });
     jwtTokenStream.listen((_) {});
     Future.delayed(
-      Duration(milliseconds: 1000),
+      const Duration(milliseconds: 1000),
       () => _appStateNotifier.stopShowingSplashImage(),
     );
   }
@@ -83,7 +85,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'sanai',
-      localizationsDelegates: [
+      localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
@@ -104,12 +106,12 @@ class _MyAppState extends State<MyApp> {
 }
 
 class NavBarPage extends StatefulWidget {
-  NavBarPage({
-    Key? key,
+  const NavBarPage({
+    super.key,
     this.initialPage,
     this.page,
     this.disableResizeToAvoidBottomInset = false,
-  }) : super(key: key);
+  });
 
   final String? initialPage;
   final Widget? page;
@@ -134,11 +136,11 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'setiing': SetiingWidget(),
-      'caleander': CaleanderWidget(),
-      'home': HomeWidget(),
-      'chat': ChatWidget(),
-      'profile': ProfileWidget(),
+      'setiing': const SetiingWidget(),
+      'caleander': const CaleanderWidget(),
+      'home': const HomeWidget(),
+      'chat': const ChatWidget(),
+      'profile': const ProfileWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -159,13 +161,13 @@ class _NavBarPageState extends State<NavBarPage> {
           _currentPageName = tabs.keys.toList()[i];
         }),
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-        selectedItemColor: Color(0xFFB0E1F1),
-        unselectedItemColor: Color(0xFF8BC6D7),
-        selectedBackgroundColor: Color(0x00000000),
+        selectedItemColor: const Color(0xFFB0E1F1),
+        unselectedItemColor: const Color(0xFF8BC6D7),
+        selectedBackgroundColor: const Color(0x00000000),
         borderRadius: 8.0,
         itemBorderRadius: 8.0,
-        margin: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        margin: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         width: double.infinity,
         elevation: 0.0,
         items: [
@@ -176,7 +178,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 Icon(
                   Icons.settings_sharp,
                   color:
-                      currentIndex == 0 ? Color(0xFFB0E1F1) : Color(0xFF8BC6D7),
+                      currentIndex == 0 ? const Color(0xFFB0E1F1) : const Color(0xFF8BC6D7),
                   size: 24.0,
                 ),
                 Text(
@@ -184,8 +186,8 @@ class _NavBarPageState extends State<NavBarPage> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 0
-                        ? Color(0xFFB0E1F1)
-                        : Color(0xFF8BC6D7),
+                        ? const Color(0xFFB0E1F1)
+                        : const Color(0xFF8BC6D7),
                     fontSize: 11.0,
                   ),
                 ),
@@ -201,7 +203,7 @@ class _NavBarPageState extends State<NavBarPage> {
                       ? Icons.date_range_rounded
                       : Icons.date_range_outlined,
                   color:
-                      currentIndex == 1 ? Color(0xFFB0E1F1) : Color(0xFF8BC6D7),
+                      currentIndex == 1 ? const Color(0xFFB0E1F1) : const Color(0xFF8BC6D7),
                   size: currentIndex == 1 ? 0.0 : 24.0,
                 ),
                 Text(
@@ -209,8 +211,8 @@ class _NavBarPageState extends State<NavBarPage> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 1
-                        ? Color(0xFFB0E1F1)
-                        : Color(0xFF8BC6D7),
+                        ? const Color(0xFFB0E1F1)
+                        : const Color(0xFF8BC6D7),
                     fontSize: 11.0,
                   ),
                 ),
@@ -224,7 +226,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 Icon(
                   Icons.home_outlined,
                   color:
-                      currentIndex == 2 ? Color(0xFFB0E1F1) : Color(0xFF8BC6D7),
+                      currentIndex == 2 ? const Color(0xFFB0E1F1) : const Color(0xFF8BC6D7),
                   size: 24.0,
                 ),
                 Text(
@@ -232,8 +234,8 @@ class _NavBarPageState extends State<NavBarPage> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 2
-                        ? Color(0xFFB0E1F1)
-                        : Color(0xFF8BC6D7),
+                        ? const Color(0xFFB0E1F1)
+                        : const Color(0xFF8BC6D7),
                     fontSize: 11.0,
                   ),
                 ),
@@ -247,15 +249,15 @@ class _NavBarPageState extends State<NavBarPage> {
                 Icon(
                   Icons.wechat_sharp,
                   color:
-                      currentIndex == 3 ? Color(0xFFB0E1F1) : Color(0xFF8BC6D7),
+                      currentIndex == 3 ? const Color(0xFFB0E1F1) : const Color(0xFF8BC6D7),
                 ),
                 Text(
                   'Chat',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 3
-                        ? Color(0xFFB0E1F1)
-                        : Color(0xFF8BC6D7),
+                        ? const Color(0xFFB0E1F1)
+                        : const Color(0xFF8BC6D7),
                     fontSize: 11.0,
                   ),
                 ),
@@ -269,7 +271,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 Icon(
                   Icons.person_sharp,
                   color:
-                      currentIndex == 4 ? Color(0xFFB0E1F1) : Color(0xFF8BC6D7),
+                      currentIndex == 4 ? const Color(0xFFB0E1F1) : const Color(0xFF8BC6D7),
                   size: 24.0,
                 ),
                 Text(
@@ -277,8 +279,8 @@ class _NavBarPageState extends State<NavBarPage> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 4
-                        ? Color(0xFFB0E1F1)
-                        : Color(0xFF8BC6D7),
+                        ? const Color(0xFFB0E1F1)
+                        : const Color(0xFF8BC6D7),
                     fontSize: 11.0,
                   ),
                 ),

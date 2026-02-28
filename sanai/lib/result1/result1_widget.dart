@@ -53,7 +53,7 @@ class _Result1WidgetState extends State<Result1Widget> {
             Container(
               width: double.infinity,
               height: 199.9,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                   stops: [0.0, 1.0],
@@ -62,11 +62,11 @@ class _Result1WidgetState extends State<Result1Widget> {
                 ),
               ),
               child: Align(
-                alignment: AlignmentDirectional(-1.0, 0.0),
+                alignment: const AlignmentDirectional(-1.0, 0.0),
                 child: Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         'Result\n',
                         style:
@@ -89,7 +89,7 @@ class _Result1WidgetState extends State<Result1Widget> {
                               .headlineSmall
                               .fontStyle,
                           shadows: [
-                            Shadow(
+                            const Shadow(
                               color: Color(0xFF8BC6D7),
                               offset: Offset(1.0, 1.0),
                               blurRadius: 1.0,
@@ -99,10 +99,10 @@ class _Result1WidgetState extends State<Result1Widget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-0.96, -0.57),
+                      alignment: const AlignmentDirectional(-0.96, -0.57),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: FlutterFlowIconButton(
                           borderRadius: 8.0,
                           buttonSize: 40.0,
@@ -122,7 +122,7 @@ class _Result1WidgetState extends State<Result1Widget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Container(
                 width: double.infinity,
                 height: 700.0,
@@ -134,18 +134,18 @@ class _Result1WidgetState extends State<Result1Widget> {
                       'assets/images/5805524749210291431_121.jpg',
                     ).image,
                   ),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0x4400FFE4),
+                    color: const Color(0x4400FFE4),
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 100.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 100.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -167,7 +167,7 @@ class _Result1WidgetState extends State<Result1Widget> {
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               'Based on your face, you may need immediate support, please take a deep breath and start talking with us.',
                               textAlign: TextAlign.center,
@@ -190,7 +190,7 @@ class _Result1WidgetState extends State<Result1Widget> {
                                     .titleSmall
                                     .fontStyle,
                                 shadows: [
-                                  Shadow(
+                                  const Shadow(
                                     color: Color(0x7DBA3535),
                                     offset: Offset(1.0, 1.0),
                                     blurRadius: 1.0,

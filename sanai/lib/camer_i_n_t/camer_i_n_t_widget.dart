@@ -53,11 +53,11 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
         child: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, -1.22),
+              alignment: const AlignmentDirectional(0.0, -1.22),
               child: Container(
                 width: double.infinity,
                 height: 190.24,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                     stops: [0.0, 1.0],
@@ -71,17 +71,17 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
                     topRight: Radius.circular(0.0),
                   ),
                 ),
-                alignment: AlignmentDirectional(-1.0, -1.0),
+                alignment: const AlignmentDirectional(-1.0, -1.0),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.74),
+              alignment: const AlignmentDirectional(0.0, 1.74),
               child: Container(
                 width: double.infinity,
                 height: 720.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(70.0),
@@ -91,7 +91,7 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.02, -0.53),
+              alignment: const AlignmentDirectional(-0.02, -0.53),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.asset(
@@ -105,7 +105,7 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
             FlutterFlowIconButton(
               borderRadius: 8.0,
               buttonSize: 40.0,
-              fillColor: Color(0x0008DCC6),
+              fillColor: const Color(0x0008DCC6),
               icon: Icon(
                 Icons.arrow_back,
                 color: FlutterFlowTheme.of(context).info,
@@ -116,11 +116,11 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
               },
             ),
             Align(
-              alignment: AlignmentDirectional(0.68, 0.48),
+              alignment: const AlignmentDirectional(0.68, 0.48),
               child: FlutterFlowIconButton(
                 borderRadius: 50.0,
                 buttonSize: 65.13,
-                fillColor: Color(0xFFC9F0F9),
+                fillColor: const Color(0xFFC9F0F9),
                 icon: Icon(
                   Icons.check,
                   color: FlutterFlowTheme.of(context).info,
@@ -132,11 +132,11 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.03, 0.47),
+              alignment: const AlignmentDirectional(-0.03, 0.47),
               child: FlutterFlowIconButton(
                 borderRadius: 50.0,
                 buttonSize: 65.1,
-                fillColor: Color(0xFFC9F0F9),
+                fillColor: const Color(0xFFC9F0F9),
                 icon: Icon(
                   Icons.info_outline_sharp,
                   color: FlutterFlowTheme.of(context).info,
@@ -148,11 +148,11 @@ class _CamerINTWidgetState extends State<CamerINTWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(-0.73, 0.47),
+              alignment: const AlignmentDirectional(-0.73, 0.47),
               child: FlutterFlowIconButton(
                 borderRadius: 50.0,
                 buttonSize: 65.1,
-                fillColor: Color(0xFFC9F0F9),
+                fillColor: const Color(0xFFC9F0F9),
                 icon: Icon(
                   Icons.sync,
                   color: FlutterFlowTheme.of(context).info,

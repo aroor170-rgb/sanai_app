@@ -80,14 +80,14 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -123,7 +123,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                   .bodyMedium
                                   .fontStyle,
                             ),
-                            color: Color(0xFF3466A8),
+                            color: const Color(0xFF3466A8),
                             letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -133,7 +133,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                 .fontStyle,
                           ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
@@ -211,14 +211,14 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
@@ -227,7 +227,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                             filled: true,
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 16.0),
                           ),
                           style:
@@ -266,7 +266,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                               }),
                           ],
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
@@ -302,7 +302,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -343,7 +343,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 8.0)),
+                      ].divide(const SizedBox(height: 8.0)),
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.max,
@@ -398,19 +398,19 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                               color: FlutterFlowTheme.of(context).secondaryText,
                               size: 20.0,
                             ),
-                          ].divide(SizedBox(width: 8.0)),
+                          ].divide(const SizedBox(width: 8.0)),
                         ),
                       ],
                     ),
-                  ].divide(SizedBox(height: 20.0)),
+                  ].divide(const SizedBox(height: 20.0)),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 56.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFC9F0F9),
+                      color: const Color(0xFFC9F0F9),
                       borderRadius: BorderRadius.circular(12.0),
                       border: Border.all(
                         color: FlutterFlowTheme.of(context).alternate,
@@ -418,7 +418,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -452,14 +452,14 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                       .fontStyle,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                     ),
                   ),
                 ),
                 Expanded(
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(EditSavedWidget.routeName);
@@ -468,10 +468,10 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 56.0,
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC9F0F9),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC9F0F9),
                         textStyle:
                             FlutterFlowTheme.of(context).titleMedium.override(
                                   font: GoogleFonts.interTight(
@@ -480,7 +480,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                         .titleMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF105A4A),
+                                  color: const Color(0xFF105A4A),
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
@@ -488,7 +488,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                       .fontStyle,
                                 ),
                         elevation: 0.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -498,7 +498,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -526,7 +526,7 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                             .primaryText,
                                         size: 30.0,
                                       ),
-                                    ].divide(SizedBox(width: 10.0)),
+                                    ].divide(const SizedBox(width: 10.0)),
                                   ),
                                   Icon(
                                     Icons.zoom_in,
@@ -534,11 +534,11 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                                         .primaryText,
                                     size: 30.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
-                            ].divide(SizedBox(width: 10.0)),
+                            ].divide(const SizedBox(width: 10.0)),
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                       Icon(
                         Icons.zoom_out,
@@ -556,11 +556,11 @@ class _AddReWaWidgetState extends State<AddReWaWidget> {
                         size: 30.0,
                       ),
                     ]
-                        .divide(SizedBox(width: 10.0))
-                        .around(SizedBox(width: 10.0)),
+                        .divide(const SizedBox(width: 10.0))
+                        .around(const SizedBox(width: 10.0)),
                   ),
                 ),
-              ].divide(SizedBox(height: 24.0)),
+              ].divide(const SizedBox(height: 24.0)),
             ),
           ),
         ),

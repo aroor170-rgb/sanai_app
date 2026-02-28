@@ -53,13 +53,13 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Container(
                   width: 280.0,
                   height: 182.1,
                   decoration: BoxDecoration(
-                    color: Color(0xFFC9F0F9),
-                    boxShadow: [
+                    color: const Color(0xFFC9F0F9),
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 12.0,
                         color: Color(0x40000000),
@@ -72,7 +72,7 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
                     borderRadius: BorderRadius.circular(16.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(24.0),
+                    padding: const EdgeInsets.all(24.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,7 +88,7 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
                                           .titleMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 23.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -105,15 +105,15 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
                                 context.pushNamed(AddReWaWidget.routeName);
                               },
                               text: 'Edit',
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.edit,
                                 size: 20.0,
                               ),
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 44.0,
-                                padding: EdgeInsets.all(8.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsets.all(8.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 iconColor:
                                     FlutterFlowTheme.of(context).primaryText,
@@ -149,18 +149,18 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
                                 context.pushNamed(EditRemovedWidget.routeName);
                               },
                               text: 'Delete',
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.delete_outline,
                                 size: 20.0,
                               ),
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 44.0,
-                                padding: EdgeInsets.all(8.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsets.all(8.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 iconColor: FlutterFlowTheme.of(context).error,
-                                color: Color(0xFFFFE6E6),
+                                color: const Color(0xFFFFE6E6),
                                 textStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -185,17 +185,17 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 0.0, 0.0),
                           child: FlutterFlowIconButton(
                             borderColor: Colors.transparent,
                             borderRadius: 30.0,
                             borderWidth: 1.0,
                             buttonSize: 29.0,
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.arrow_back_rounded,
                               color: Color(0xFF2C4A31),
                               size: 38.0,
@@ -211,15 +211,15 @@ class _EditActionWWidgetState extends State<EditActionWWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.78, -0.18),
+                alignment: const AlignmentDirectional(-0.78, -0.18),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                   child: FlutterFlowIconButton(
                     borderColor: Colors.transparent,
                     borderRadius: 30.0,
                     borderWidth: 1.0,
                     buttonSize: 29.0,
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back_rounded,
                       color: Color(0xE6485153),
                       size: 30.0,

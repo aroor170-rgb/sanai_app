@@ -53,13 +53,13 @@ class _TestWidgetState extends State<TestWidget> {
         body: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Stack(
                 children: [
                   Container(
                     width: double.infinity,
                     height: 180.8,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                         stops: [0.0, 1.0],
@@ -68,7 +68,7 @@ class _TestWidgetState extends State<TestWidget> {
                       ),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Stack(
                         children: [
                           Row(
@@ -76,9 +76,9 @@ class _TestWidgetState extends State<TestWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 30.0, 0.0, 0.0),
                                   child: Text(
                                     'Test',
@@ -114,9 +114,9 @@ class _TestWidgetState extends State<TestWidget> {
                             ],
                           ),
                           Align(
-                            alignment: AlignmentDirectional(-1.0, -1.0),
+                            alignment: const AlignmentDirectional(-1.0, -1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: FlutterFlowIconButton(
                                 borderRadius: 8.0,
@@ -137,13 +137,13 @@ class _TestWidgetState extends State<TestWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: Container(
                       width: double.infinity,
                       height: 750.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(50.0),
@@ -151,18 +151,18 @@ class _TestWidgetState extends State<TestWidget> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 50.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.0, -1.0),
+                                alignment: const AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Does anxiety cause difficulty concentrating?',
@@ -193,7 +193,7 @@ class _TestWidgetState extends State<TestWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -334,18 +334,18 @@ class _TestWidgetState extends State<TestWidget> {
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 50.0)),
+                                  ].divide(const SizedBox(width: 50.0)),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 3.0),
                                 child: Stack(
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Slider(
-                                        activeColor: Color(0xFF8BC6D7),
+                                        activeColor: const Color(0xFF8BC6D7),
                                         inactiveColor:
                                             FlutterFlowTheme.of(context)
                                                 .alternate,
@@ -366,9 +366,9 @@ class _TestWidgetState extends State<TestWidget> {
                               Stack(
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Do you find it difficult to deal with daily stress?\n',
@@ -400,12 +400,12 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 45.0, 0.0, 0.0),
                                       child: Slider(
-                                        activeColor: Color(0xFF8BC6D7),
+                                        activeColor: const Color(0xFF8BC6D7),
                                         inactiveColor:
                                             FlutterFlowTheme.of(context)
                                                 .alternate,
@@ -422,9 +422,9 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 1.0),
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -588,7 +588,7 @@ class _TestWidgetState extends State<TestWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 50.0)),
+                                        ].divide(const SizedBox(width: 50.0)),
                                       ),
                                     ),
                                   ),
@@ -597,9 +597,9 @@ class _TestWidgetState extends State<TestWidget> {
                               Stack(
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Do you feel sad or have a loss of interest?',
@@ -631,12 +631,12 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 45.0, 0.0, 0.0),
                                       child: Slider(
-                                        activeColor: Color(0xFF8BC6D7),
+                                        activeColor: const Color(0xFF8BC6D7),
                                         inactiveColor:
                                             FlutterFlowTheme.of(context)
                                                 .alternate,
@@ -653,9 +653,9 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 1.0),
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -819,7 +819,7 @@ class _TestWidgetState extends State<TestWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 50.0)),
+                                        ].divide(const SizedBox(width: 50.0)),
                                       ),
                                     ),
                                   ),
@@ -828,9 +828,9 @@ class _TestWidgetState extends State<TestWidget> {
                               Stack(
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Do you criticize yourself frequently?',
@@ -862,12 +862,12 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 40.0, 0.0, 0.0),
                                       child: Slider(
-                                        activeColor: Color(0xFF8BC6D7),
+                                        activeColor: const Color(0xFF8BC6D7),
                                         inactiveColor:
                                             FlutterFlowTheme.of(context)
                                                 .alternate,
@@ -884,9 +884,9 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 1.0),
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1050,7 +1050,7 @@ class _TestWidgetState extends State<TestWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 50.0)),
+                                        ].divide(const SizedBox(width: 50.0)),
                                       ),
                                     ),
                                   ),
@@ -1059,9 +1059,9 @@ class _TestWidgetState extends State<TestWidget> {
                               Stack(
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 20.0),
                                       child: Text(
                                         'Do you have trouble sleeping or relaxing?',
@@ -1093,9 +1093,9 @@ class _TestWidgetState extends State<TestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 1.0),
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1259,17 +1259,17 @@ class _TestWidgetState extends State<TestWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 50.0)),
+                                        ].divide(const SizedBox(width: 50.0)),
                                       ),
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 45.0, 0.0, 0.0),
                                       child: Slider(
-                                        activeColor: Color(0xFF8BC6D7),
+                                        activeColor: const Color(0xFF8BC6D7),
                                         inactiveColor:
                                             FlutterFlowTheme.of(context)
                                                 .alternate,
@@ -1288,7 +1288,7 @@ class _TestWidgetState extends State<TestWidget> {
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
@@ -1298,11 +1298,11 @@ class _TestWidgetState extends State<TestWidget> {
                                   options: FFButtonOptions(
                                     width: 300.0,
                                     height: 40.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0xFFC9F0F9),
+                                    color: const Color(0xFFC9F0F9),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -1316,7 +1316,7 @@ class _TestWidgetState extends State<TestWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight:
@@ -1334,7 +1334,7 @@ class _TestWidgetState extends State<TestWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 3.0, 0.0, 0.0),
                                 child: Container(
                                   width: 300.0,
@@ -1344,7 +1344,7 @@ class _TestWidgetState extends State<TestWidget> {
                                         .secondaryBackground,
                                     borderRadius: BorderRadius.circular(16.0),
                                     border: Border.all(
-                                      color: Color(0xFFC9F0F9),
+                                      color: const Color(0xFFC9F0F9),
                                     ),
                                   ),
                                   child: Row(
@@ -1387,11 +1387,11 @@ class _TestWidgetState extends State<TestWidget> {
                                             .primaryText,
                                         size: 24.0,
                                       ),
-                                    ].divide(SizedBox(width: 10.0)),
+                                    ].divide(const SizedBox(width: 10.0)),
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 6.0)),
+                            ].divide(const SizedBox(height: 6.0)),
                           ),
                         ),
                       ),

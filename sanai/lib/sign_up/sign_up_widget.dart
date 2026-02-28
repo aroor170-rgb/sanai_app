@@ -460,7 +460,7 @@ class _SignUpWidgetState extends State<SignUpWidget>
                           child: SizedBox(
                             width: 300.0,
                             child: DropdownButtonFormField<String>(
-                              value: _model.selectedGender,
+                              initialValue: _model.selectedGender,
                               items: _genderOptions
                                   .map((g) => DropdownMenuItem(
                                         value: g,

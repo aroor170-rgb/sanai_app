@@ -67,7 +67,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -83,7 +83,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -95,7 +95,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       child: Container(
                         width: 100.0,
                         height: 90.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -117,7 +117,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.psychology_alt_rounded,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -150,7 +150,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -177,7 +177,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x86105A4A),
+                                          color: const Color(0x86105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -189,17 +189,17 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -211,7 +211,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       child: Container(
                         width: 100.0,
                         height: 90.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -233,7 +233,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.psychology_alt_rounded,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -266,7 +266,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -293,7 +293,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x86105A4A),
+                                          color: const Color(0x86105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -305,17 +305,17 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -327,7 +327,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       child: Container(
                         width: 100.0,
                         height: 90.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -349,7 +349,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.psychology_alt_rounded,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -382,7 +382,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -409,7 +409,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x86105A4A),
+                                          color: const Color(0x86105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -421,17 +421,17 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -443,7 +443,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       child: Container(
                         width: 100.0,
                         height: 90.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -465,7 +465,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.chat_bubble,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -498,7 +498,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -525,7 +525,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x86105A4A),
+                                          color: const Color(0x86105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -537,15 +537,15 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 10.0)),
+                ].divide(const SizedBox(height: 10.0)),
               ),
             ],
           ),

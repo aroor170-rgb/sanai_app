@@ -76,7 +76,7 @@ void initState() {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, -1.10),
+                alignment: const AlignmentDirectional(0.0, -1.10),
                 child: Container(
                   width: double.infinity,
                   height: 160,

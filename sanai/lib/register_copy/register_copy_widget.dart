@@ -46,11 +46,11 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
       body: Stack(
         children: [
           Align(
-            alignment: AlignmentDirectional(0.0, -1.0),
+            alignment: const AlignmentDirectional(0.0, -1.0),
             child: Container(
               width: double.infinity,
               height: 520.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                   stops: [0.0, 1.0],
@@ -59,7 +59,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -73,35 +73,35 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0.0, 1.0),
+            alignment: const AlignmentDirectional(0.0, 1.0),
             child: Container(
               width: double.infinity,
               height: 500.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(50.0),
                   topRight: Radius.circular(50.0),
                 ),
                 border: Border.all(
-                  color: Color(0xFFC9F0F9),
+                  color: const Color(0xFFC9F0F9),
                 ),
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
                           child: Text(
                             'Welcom',
@@ -116,7 +116,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                     .headlineSmall
                                     .fontStyle,
                               ),
-                              color: Color(0xFF105A4A),
+                              color: const Color(0xFF105A4A),
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .headlineSmall
@@ -125,7 +125,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                   .headlineSmall
                                   .fontStyle,
                               shadows: [
-                                Shadow(
+                                const Shadow(
                                   color: Color(0xFF8BC6D7),
                                   offset: Offset(1.0, 1.0),
                                   blurRadius: 1.0,
@@ -136,7 +136,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           'Please create account or log in to continue use application',
                           style:
@@ -147,7 +147,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF2C4A31),
+                                    color: const Color(0xFF2C4A31),
                                     fontSize: 10.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -158,9 +158,9 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 50.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -175,15 +175,15 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
   options: FFButtonOptions(
     width: 300.0,
     height: 40.0,
-    padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-    color: Color(0xFFC9F0F9),
+    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+    iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+    color: const Color(0xFFC9F0F9),
     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
           font: GoogleFonts.interTight(
             fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
             fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
           ),
-          color: Color(0xFF105A4A),
+          color: const Color(0xFF105A4A),
           fontSize: 20.0,
           letterSpacing: 0.0,
           fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
@@ -201,11 +201,11 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                 options: FFButtonOptions(
                                   width: 300.0,
                                   height: 40.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0xFFC9F0F9),
+                                  color: const Color(0xFFC9F0F9),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -219,7 +219,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         fontSize: 20.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
@@ -241,7 +241,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Text(
                                   'or',
@@ -269,7 +269,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Text(
                                   'As Guest',
@@ -286,7 +286,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF203523),
+                                        color: const Color(0xFF203523),
                                         fontSize: 19.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
@@ -298,7 +298,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                                       ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 20.0)),
+                            ].divide(const SizedBox(height: 20.0)),
                           ),
                         ),
                       ),
@@ -310,7 +310,7 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                           borderRadius: BorderRadius.circular(16.0),
                           border: Border.all(
-                            color: Color(0xFFC9F0F9),
+                            color: const Color(0xFFC9F0F9),
                           ),
                         ),
                         child: Row(
@@ -347,10 +347,10 @@ class _RegisterCopyWidgetState extends State<RegisterCopyWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
-                          ].divide(SizedBox(width: 10.0)),
+                          ].divide(const SizedBox(width: 10.0)),
                         ),
                       ),
-                    ].divide(SizedBox(height: 10.0)),
+                    ].divide(const SizedBox(height: 10.0)),
                   ),
                 ),
               ),

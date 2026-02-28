@@ -52,7 +52,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
           leading: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: FlutterFlowIconButton(
               borderRadius: 12.0,
               buttonSize: 40.0,
@@ -80,7 +80,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                       FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -90,7 +90,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
                 child: ListView(
                   padding: EdgeInsets.zero,
                   shrinkWrap: true,
@@ -98,7 +98,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -117,13 +117,13 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Container(
                                     width: 12.0,
@@ -247,12 +247,12 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                                                               .fontStyle,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 8.0,
                                             buttonSize: 32.0,
-                                            fillColor: Color(0x4C0E84A5),
+                                            fillColor: const Color(0x4C0E84A5),
                                             icon: Icon(
                                               Icons.edit_rounded,
                                               color:
@@ -267,7 +267,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ],
@@ -278,7 +278,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -297,13 +297,13 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Container(
                                     width: 12.0,
@@ -427,12 +427,12 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                                                               .fontStyle,
                                                     ),
                                               ),
-                                            ].divide(SizedBox(width: 4.0)),
+                                            ].divide(const SizedBox(width: 4.0)),
                                           ),
                                           FlutterFlowIconButton(
                                             borderRadius: 8.0,
                                             buttonSize: 32.0,
-                                            fillColor: Color(0x4C0E84A5),
+                                            fillColor: const Color(0x4C0E84A5),
                                             icon: Icon(
                                               Icons.edit_rounded,
                                               color:
@@ -447,7 +447,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(height: 8.0)),
+                                    ].divide(const SizedBox(height: 8.0)),
                                   ),
                                 ),
                               ],
@@ -458,7 +458,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -481,7 +481,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 1.0,
@@ -506,9 +506,9 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 330.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 330.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -537,7 +537,7 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                                             .primaryText,
                                         size: 30.0,
                                       ),
-                                    ].divide(SizedBox(width: 10.0)),
+                                    ].divide(const SizedBox(width: 10.0)),
                                   ),
                                   Icon(
                                     Icons.zoom_in,
@@ -545,11 +545,11 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                                         .primaryText,
                                     size: 30.0,
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
-                            ].divide(SizedBox(width: 10.0)),
+                            ].divide(const SizedBox(width: 10.0)),
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                       Icon(
                         Icons.zoom_out,
@@ -567,8 +567,8 @@ class _EditRemMWidgetState extends State<EditRemMWidget> {
                         size: 30.0,
                       ),
                     ]
-                        .divide(SizedBox(width: 10.0))
-                        .around(SizedBox(width: 10.0)),
+                        .divide(const SizedBox(width: 10.0))
+                        .around(const SizedBox(width: 10.0)),
                   ),
                 ),
               ),

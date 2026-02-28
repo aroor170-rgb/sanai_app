@@ -56,13 +56,13 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                 Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: Stack(
                         children: [
                           Container(
                             width: double.infinity,
                             height: 227.38,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                                 stops: [0.0, 1.0],
@@ -77,9 +77,9 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 88.0),
                                         child: Text(
                                           'mental health guides',
@@ -109,7 +109,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                             shadows: [
-                                              Shadow(
+                                              const Shadow(
                                                 color: Color(0xFF8BC6D7),
                                                 offset: Offset(1.0, 1.0),
                                                 blurRadius: 1.0,
@@ -119,15 +119,15 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 50.0)),
+                                  ].divide(const SizedBox(width: 50.0)),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 60.0, 0.0, 0.0),
                                   child: FlutterFlowIconButton(
                                     borderRadius: 8.0,
                                     buttonSize: 40.0,
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.arrow_back,
                                       color: Color(0xFF335656),
                                       size: 30.0,
@@ -141,40 +141,40 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 1.41),
+                            alignment: const AlignmentDirectional(0.0, 1.41),
                             child: Container(
                               width: double.infinity,
                               height: 750.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(0.0),
                                   bottomRight: Radius.circular(0.0),
                                   topLeft: Radius.circular(50.0),
                                   topRight: Radius.circular(50.0),
                                 ),
                                 border: Border.all(
-                                  color: Color(0xFFC9F0F9),
+                                  color: const Color(0xFFC9F0F9),
                                 ),
                               ),
                               child: Stack(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 100.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        Container(
+                                        SizedBox(
                                           width: 500.0,
                                           height: 734.8,
                                           child: Stack(
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.06, -0.84),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -189,7 +189,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.05, -0.51),
                                                 child: FFButtonWidget(
                                                   onPressed: () async {
@@ -202,14 +202,14 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                     width: 235.0,
                                                     height: 44.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0xFFC9F0F9),
+                                                    color: const Color(0xFFC9F0F9),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
@@ -228,7 +228,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                                     .fontStyle,
                                                           ),
                                                           color:
-                                                              Color(0xFF105A4A),
+                                                              const Color(0xFF105A4A),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
@@ -249,7 +249,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.03, -0.21),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -264,7 +264,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.03, 0.05),
                                                 child: FFButtonWidget(
                                                   onPressed: () async {
@@ -277,14 +277,14 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                     width: 235.0,
                                                     height: 44.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0xFFC9F0F9),
+                                                    color: const Color(0xFFC9F0F9),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
@@ -303,7 +303,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                                     .fontStyle,
                                                           ),
                                                           color:
-                                                              Color(0xFF105A4A),
+                                                              const Color(0xFF105A4A),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
@@ -324,7 +324,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -0.03, 0.41),
                                                 child: ClipRRect(
                                                   borderRadius:
@@ -339,7 +339,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.01, 0.6),
                                                 child: FFButtonWidget(
                                                   onPressed: () async {
@@ -352,14 +352,14 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                     width: 235.0,
                                                     height: 44.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 16.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0xFFC9F0F9),
+                                                    color: const Color(0xFFC9F0F9),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
@@ -378,7 +378,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                                     .fontStyle,
                                                           ),
                                                           color:
-                                                              Color(0xFF105A4A),
+                                                              const Color(0xFF105A4A),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
@@ -401,13 +401,13 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                             ],
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 50.0)),
+                                      ].divide(const SizedBox(height: 50.0)),
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.87),
+                                    alignment: const AlignmentDirectional(0.0, 0.87),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -442,7 +442,7 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                                 .primaryText,
                                                             size: 30.0,
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             width: 10.0)),
                                                       ),
                                                       Icon(
@@ -454,11 +454,11 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                                         size: 30.0,
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 10.0)),
+                                                        const SizedBox(width: 10.0)),
                                                   ),
-                                                ].divide(SizedBox(width: 10.0)),
+                                                ].divide(const SizedBox(width: 10.0)),
                                               ),
-                                            ].divide(SizedBox(width: 10.0)),
+                                            ].divide(const SizedBox(width: 10.0)),
                                           ),
                                           Icon(
                                             Icons.zoom_out,
@@ -479,8 +479,8 @@ class _MentalHealthGuidesWidgetState extends State<MentalHealthGuidesWidget> {
                                             size: 30.0,
                                           ),
                                         ]
-                                            .divide(SizedBox(width: 10.0))
-                                            .around(SizedBox(width: 10.0)),
+                                            .divide(const SizedBox(width: 10.0))
+                                            .around(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),

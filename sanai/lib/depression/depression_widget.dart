@@ -67,7 +67,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                   fontStyle: FlutterFlowTheme.of(context).titleMedium.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -83,7 +83,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -95,7 +95,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                       child: Container(
                         width: 100.0,
                         height: 95.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -115,13 +115,13 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 15.0, 15.0, 15.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.local_hospital,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -144,7 +144,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -171,7 +171,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x86105A4A),
+                                          color: const Color(0x86105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -183,9 +183,9 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
-                            ].divide(SizedBox(width: 20.0)),
+                            ].divide(const SizedBox(width: 20.0)),
                           ),
                         ),
                       ),
@@ -193,7 +193,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -205,7 +205,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                       child: Container(
                         width: 100.0,
                         height: 95.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xFFC9F0F9),
                           boxShadow: [
                             BoxShadow(
@@ -225,13 +225,13 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 15.0, 15.0, 15.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.menu_book,
                                 color: Color(0xFF105A4A),
                                 size: 30.0,
@@ -254,7 +254,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF105A4A),
+                                          color: const Color(0xFF105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -281,7 +281,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x86105A4A),
+                                          color: const Color(0x86105A4A),
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -293,9 +293,9 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
-                            ].divide(SizedBox(width: 20.0)),
+                            ].divide(const SizedBox(width: 20.0)),
                           ),
                         ),
                       ),
@@ -303,11 +303,11 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Container(
                       width: 100.0,
                       height: 95.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFC9F0F9),
                         boxShadow: [
                           BoxShadow(
@@ -327,13 +327,13 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             15.0, 15.0, 15.0, 15.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.psychology_alt,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -356,7 +356,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -381,7 +381,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -391,20 +391,20 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                             .fontStyle,
                                       ),
                                 ),
-                              ].divide(SizedBox(height: 10.0)),
+                              ].divide(const SizedBox(height: 10.0)),
                             ),
-                          ].divide(SizedBox(width: 20.0)),
+                          ].divide(const SizedBox(width: 20.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Container(
                       width: 100.0,
                       height: 95.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFC9F0F9),
                         boxShadow: [
                           BoxShadow(
@@ -424,13 +424,13 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             15.0, 15.0, 15.0, 15.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.health_and_safety,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -453,7 +453,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -478,7 +478,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -488,20 +488,20 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                             .fontStyle,
                                       ),
                                 ),
-                              ].divide(SizedBox(height: 10.0)),
+                              ].divide(const SizedBox(height: 10.0)),
                             ),
-                          ].divide(SizedBox(width: 20.0)),
+                          ].divide(const SizedBox(width: 20.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Container(
                       width: 100.0,
                       height: 95.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFC9F0F9),
                         boxShadow: [
                           BoxShadow(
@@ -521,13 +521,13 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             15.0, 15.0, 15.0, 15.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.medical_information,
                               color: Color(0xFF105A4A),
                               size: 30.0,
@@ -550,7 +550,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF105A4A),
+                                        color: const Color(0xFF105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -575,7 +575,7 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0x86105A4A),
+                                        color: const Color(0x86105A4A),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -585,9 +585,9 @@ class _DepressionWidgetState extends State<DepressionWidget> {
                                             .fontStyle,
                                       ),
                                 ),
-                              ].divide(SizedBox(height: 10.0)),
+                              ].divide(const SizedBox(height: 10.0)),
                             ),
-                          ].divide(SizedBox(width: 20.0)),
+                          ].divide(const SizedBox(width: 20.0)),
                         ),
                       ),
                     ),

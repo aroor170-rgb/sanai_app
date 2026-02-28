@@ -110,11 +110,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
       }, SetOptions(merge: true));
 
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Updated ✅')),
+        const SnackBar(content: Text('Updated ✅')),
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Update failed ❌')),
+        const SnackBar(content: Text('Update failed ❌')),
       );
     }
   }
@@ -123,7 +123,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
     showModalBottomSheet(
       context: context,
       backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-      shape: RoundedRectangleBorder(
+      shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
       ),
       builder: (context) {
@@ -152,7 +152,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       shape: BoxShape.circle,
                       border: Border.all(
                         color: isSelected
-                            ? Color(0xFF8BC6D7)
+                            ? const Color(0xFF8BC6D7)
                             : Colors.transparent,
                         width: 3,
                       ),
@@ -183,11 +183,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
         body: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, -1.0),
+              alignment: const AlignmentDirectional(0.0, -1.0),
               child: Container(
                 width: double.infinity,
                 height: 272.3,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                     stops: [0.0, 1.0],
@@ -196,7 +196,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, -0.95),
+                  alignment: const AlignmentDirectional(0.0, -0.95),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -204,27 +204,27 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       width: 393.7,
                       height: 264.4,
                       fit: BoxFit.cover,
-                      alignment: Alignment(0.0, -1.0),
+                      alignment: const Alignment(0.0, -1.0),
                     ),
                   ),
                 ),
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.28),
+              alignment: const AlignmentDirectional(0.0, 1.28),
               child: Container(
                 width: double.infinity,
                 height: 650.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
                   ),
                   border: Border.all(
-                    color: Color(0xFFC9F0F9),
+                    color: const Color(0xFFC9F0F9),
                   ),
                 ),
               ),
@@ -232,7 +232,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
 
             // ✅ صورة البروفايل نفسها لكن صارت ديناميكية + edit تحتها
             Align(
-              alignment: AlignmentDirectional(-0.05, -0.52),
+              alignment: const AlignmentDirectional(-0.05, -0.52),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -249,7 +249,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   const SizedBox(height: 6),
                   GestureDetector(
                     onTap: _showAvatarPicker,
-                    child: Text(
+                    child: const Text(
                       'edit',
                       style: TextStyle(
                         fontSize: 12,
@@ -263,20 +263,20 @@ class _ProfileWidgetState extends State<ProfileWidget> {
             ),
 
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
                 padding:
-                    EdgeInsetsDirectional.fromSTEB(30.0, 100.0, 30.0, 10.0),
+                    const EdgeInsetsDirectional.fromSTEB(30.0, 100.0, 30.0, 10.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 30.0, 0.0, 10.0),
-                        child: Container(
+                        child: SizedBox(
                           width: 300.0,
                           child: TextFormField(
                             controller: _model.textController1,
@@ -301,14 +301,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xFF8BC6D7),
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -349,11 +349,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     ),
 
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 0.0, 10.0),
-                        child: Container(
+                        child: SizedBox(
                           width: 300.0,
                           child: TextFormField(
                             controller: _model.textController2,
@@ -378,14 +378,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xFF8BC6D7),
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -426,11 +426,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     ),
 
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 0.0, 10.0),
-                        child: Container(
+                        child: SizedBox(
                           width: 300.0,
                           child: TextFormField(
                             controller: _model.textController3,
@@ -455,14 +455,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xFF8BC6D7),
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -503,11 +503,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     ),
 
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 0.0, 10.0),
-                        child: Container(
+                        child: SizedBox(
                           width: 300.0,
                           child: TextFormField(
                             controller: _model.textController4,
@@ -532,14 +532,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xFF8BC6D7),
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -587,15 +587,15 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       options: FFButtonOptions(
                         width: 300.0,
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC9F0F9),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFC9F0F9),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   font: GoogleFonts.interTight(),
-                                  color: Color(0xFF105A4A),
+                                  color: const Color(0xFF105A4A),
                                   fontSize: 20.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -603,7 +603,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                  ].divide(SizedBox(height: 30.0)),
+                  ].divide(const SizedBox(height: 30.0)),
                 ),
               ),
             ),

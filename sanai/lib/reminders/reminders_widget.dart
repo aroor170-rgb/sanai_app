@@ -55,13 +55,13 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                 Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: Stack(
                         children: [
                           Container(
                             width: double.infinity,
                             height: 227.38,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                                 stops: [0.0, 1.0],
@@ -76,9 +76,9 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 100.0),
                                         child: Text(
                                           'Reminders',
@@ -108,7 +108,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                             shadows: [
-                                              Shadow(
+                                              const Shadow(
                                                 color: Color(0xFF8BC6D7),
                                                 offset: Offset(1.0, 1.0),
                                                 blurRadius: 1.0,
@@ -118,10 +118,10 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 50.0)),
+                                  ].divide(const SizedBox(width: 50.0)),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 30.0, 0.0, 0.0),
                                   child: FlutterFlowIconButton(
                                     borderRadius: 8.0,
@@ -140,38 +140,38 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 1.41),
+                            alignment: const AlignmentDirectional(0.0, 1.41),
                             child: Container(
                               width: double.infinity,
                               height: 750.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(0.0),
                                   bottomRight: Radius.circular(0.0),
                                   topLeft: Radius.circular(50.0),
                                   topRight: Radius.circular(50.0),
                                 ),
                                 border: Border.all(
-                                  color: Color(0xFFC9F0F9),
+                                  color: const Color(0xFFC9F0F9),
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 100.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 0.0),
                                       child: Container(
                                         width: 327.0,
                                         height: 115.0,
                                         decoration: BoxDecoration(
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x0057636C),
@@ -181,7 +181,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                               ),
                                             )
                                           ],
-                                          gradient: LinearGradient(
+                                          gradient: const LinearGradient(
                                             colors: [
                                               Color(0x4D5D39D2),
                                               Color(0x13B6A7EB)
@@ -223,11 +223,11 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -244,21 +244,21 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                                             FFButtonOptions(
                                                           height: 120.8,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
                                                                       16.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
                                                           color:
-                                                              Color(0x014B39EF),
+                                                              const Color(0x014B39EF),
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -275,7 +275,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                                                           .titleSmall
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF105A4A),
                                                                     fontSize:
                                                                         22.0,
@@ -310,7 +310,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                       width: 327.0,
                                       height: 115.0,
                                       decoration: BoxDecoration(
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x0957636C),
@@ -320,7 +320,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                             ),
                                           )
                                         ],
-                                        gradient: LinearGradient(
+                                        gradient: const LinearGradient(
                                           colors: [
                                             Color(0x88FF6AA4),
                                             Color(0x01FFA0F8)
@@ -337,9 +337,9 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.37, 0.0),
+                                                const AlignmentDirectional(1.37, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 10.0, 0.0),
                                               child: ClipRRect(
@@ -361,7 +361,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                       width: 327.0,
                                       height: 115.0,
                                       decoration: BoxDecoration(
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x0957636C),
@@ -371,7 +371,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                             ),
                                           )
                                         ],
-                                        gradient: LinearGradient(
+                                        gradient: const LinearGradient(
                                           colors: [
                                             Color(0x8BFCFF56),
                                             Color(0x20FFFFC6)
@@ -387,7 +387,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -0.97, -0.63),
                                             child: ClipRRect(
                                               borderRadius:
@@ -444,9 +444,9 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                               .primaryText,
                                           size: 24.0,
                                         ),
-                                      ].divide(SizedBox(width: 10.0)),
+                                      ].divide(const SizedBox(width: 10.0)),
                                     ),
-                                  ].divide(SizedBox(height: 50.0)),
+                                  ].divide(const SizedBox(height: 50.0)),
                                 ),
                               ),
                             ),
@@ -455,7 +455,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-0.37, -0.03),
+                      alignment: const AlignmentDirectional(-0.37, -0.03),
                       child: FFButtonWidget(
                         onPressed: () async {
                           context.pushNamed(ExercisesReminderWidget.routeName);
@@ -463,11 +463,11 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                         text: 'Sports Activities',
                         options: FFButtonOptions(
                           height: 110.88,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0x014B39EF),
+                          color: const Color(0x014B39EF),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     font: GoogleFonts.interTight(
@@ -478,7 +478,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF105A4A),
+                                    color: const Color(0xFF105A4A),
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
@@ -496,7 +496,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                   ],
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.6, 0.39),
+                  alignment: const AlignmentDirectional(0.6, 0.39),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(WaterReminderWidget.routeName);
@@ -505,10 +505,10 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                     options: FFButtonOptions(
                       height: 100.87,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0x014B39EF),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0x014B39EF),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 font: GoogleFonts.interTight(
@@ -519,7 +519,7 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                                       .titleSmall
                                       .fontStyle,
                                 ),
-                                color: Color(0xFF105A4A),
+                                color: const Color(0xFF105A4A),
                                 fontSize: 22.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FlutterFlowTheme.of(context)

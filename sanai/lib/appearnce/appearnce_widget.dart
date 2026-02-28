@@ -46,8 +46,8 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(115.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(115.0, 0.0),
           ),
         ],
       ),
@@ -83,11 +83,11 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
             Stack(
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.0, -1.23),
+                  alignment: const AlignmentDirectional(0.0, -1.23),
                   child: Container(
                     width: double.infinity,
                     height: 149.18,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: [Color(0xFF8BC6D7), Color(0x218CF4E7)],
                         stops: [0.0, 1.0],
@@ -98,7 +98,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                     child: Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-0.07, 0.42),
+                          alignment: const AlignmentDirectional(-0.07, 0.42),
                           child: Text(
                             'Appearance',
                             style: FlutterFlowTheme.of(context)
@@ -122,7 +122,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                   .headlineSmall
                                   .fontStyle,
                               shadows: [
-                                Shadow(
+                                const Shadow(
                                   color: Color(0xFF8BC6D7),
                                   offset: Offset(2.0, 2.0),
                                   blurRadius: 2.0,
@@ -150,22 +150,22 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
               ],
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 0.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 750.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
                       bottomRight: Radius.circular(0.0),
                       topLeft: Radius.circular(50.0),
                       topRight: Radius.circular(50.0),
                     ),
                     border: Border.all(
-                      color: Color(0xFFC9F0F9),
+                      color: const Color(0xFFC9F0F9),
                     ),
                   ),
                   child: Column(
@@ -173,14 +173,14 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
                         child: Material(
                           color: Colors.transparent,
                           child: SwitchListTile.adaptive(
                             value: _model.switchListTileValue1 ??= true,
                             onChanged: (newValue) async {
                               safeSetState(() =>
-                                  _model.switchListTileValue1 = newValue!);
+                                  _model.switchListTileValue1 = newValue);
                             },
                             title: Text(
                               'System default',
@@ -195,7 +195,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                           .titleLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF8BC6D7),
+                                    color: const Color(0xFF8BC6D7),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleLarge
@@ -230,7 +230,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                             tileColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                             activeColor: FlutterFlowTheme.of(context).alternate,
-                            activeTrackColor: Color(0xFF8BC6D7),
+                            activeTrackColor: const Color(0xFF8BC6D7),
                             dense: false,
                             controlAffinity: ListTileControlAffinity.trailing,
                           ),
@@ -242,7 +242,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                           value: _model.switchListTileValue2 ??= false,
                           onChanged: (newValue) async {
                             safeSetState(
-                                () => _model.switchListTileValue2 = newValue!);
+                                () => _model.switchListTileValue2 = newValue);
                           },
                           title: Text(
                             'Light Mode',
@@ -257,7 +257,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                         .titleLarge
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF8BC6D7),
+                                  color: const Color(0xFF8BC6D7),
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleLarge
@@ -270,7 +270,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                           tileColor:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           activeColor: FlutterFlowTheme.of(context).alternate,
-                          activeTrackColor: Color(0xFF8BC6D7),
+                          activeTrackColor: const Color(0xFF8BC6D7),
                           dense: false,
                           controlAffinity: ListTileControlAffinity.trailing,
                         ),
@@ -281,7 +281,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                           value: _model.switchListTileValue3 ??= false,
                           onChanged: (newValue) async {
                             safeSetState(
-                                () => _model.switchListTileValue3 = newValue!);
+                                () => _model.switchListTileValue3 = newValue);
                           },
                           title: Text(
                             'Dark Mode',
@@ -296,7 +296,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                         .titleLarge
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF8BC6D7),
+                                  color: const Color(0xFF8BC6D7),
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleLarge
@@ -309,27 +309,27 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                           tileColor:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           activeColor: FlutterFlowTheme.of(context).alternate,
-                          activeTrackColor: Color(0xFF8BC6D7),
+                          activeTrackColor: const Color(0xFF8BC6D7),
                           dense: false,
                           controlAffinity: ListTileControlAffinity.trailing,
                         ),
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                         child: Container(
                           width: 250.0,
                           height: 50.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFF1F4F8),
+                            color: const Color(0xFFF1F4F8),
                             borderRadius: BorderRadius.circular(12.0),
                             border: Border.all(
-                              color: Color(0xFFE0E3E7),
+                              color: const Color(0xFFE0E3E7),
                               width: 1.0,
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(4.0),
+                            padding: const EdgeInsets.all(4.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -351,16 +351,16 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                         color: Theme.of(context).brightness ==
                                                 Brightness.light
                                             ? Colors.white
-                                            : Color(0xFFF1F4F8),
+                                            : const Color(0xFFF1F4F8),
                                         borderRadius:
                                             BorderRadius.circular(10.0),
                                         border: Border.all(
                                           color: valueOrDefault<Color>(
                                             Theme.of(context).brightness ==
                                                     Brightness.light
-                                                ? Color(0xFFE0E3E7)
-                                                : Color(0xFFF1F4F8),
-                                            Color(0xFFE0E3E7),
+                                                ? const Color(0xFFE0E3E7)
+                                                : const Color(0xFFF1F4F8),
+                                            const Color(0xFFE0E3E7),
                                           ),
                                           width: 1.0,
                                         ),
@@ -375,13 +375,13 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                             color:
                                                 Theme.of(context).brightness ==
                                                         Brightness.light
-                                                    ? Color(0xFF14181B)
-                                                    : Color(0xFF57636C),
+                                                    ? const Color(0xFF14181B)
+                                                    : const Color(0xFF57636C),
                                             size: 16.0,
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Light Mode',
@@ -401,8 +401,8 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                                     color: Theme.of(context)
                                                                 .brightness ==
                                                             Brightness.light
-                                                        ? Color(0xFF14181B)
-                                                        : Color(0xFF57636C),
+                                                        ? const Color(0xFF14181B)
+                                                        : const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -436,16 +436,16 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                         color: Theme.of(context).brightness ==
                                                 Brightness.dark
                                             ? Colors.white
-                                            : Color(0xFFF1F4F8),
+                                            : const Color(0xFFF1F4F8),
                                         borderRadius:
                                             BorderRadius.circular(10.0),
                                         border: Border.all(
                                           color: valueOrDefault<Color>(
                                             Theme.of(context).brightness ==
                                                     Brightness.dark
-                                                ? Color(0xFFE0E3E7)
-                                                : Color(0xFFF1F4F8),
-                                            Color(0xFFF1F4F8),
+                                                ? const Color(0xFFE0E3E7)
+                                                : const Color(0xFFF1F4F8),
+                                            const Color(0xFFF1F4F8),
                                           ),
                                           width: 1.0,
                                         ),
@@ -460,13 +460,13 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                             color:
                                                 Theme.of(context).brightness ==
                                                         Brightness.dark
-                                                    ? Color(0xFF14181B)
-                                                    : Color(0xFF57636C),
+                                                    ? const Color(0xFF14181B)
+                                                    : const Color(0xFF57636C),
                                             size: 16.0,
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Dark Mode',
@@ -486,8 +486,8 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                                                     color: Theme.of(context)
                                                                 .brightness ==
                                                             Brightness.dark
-                                                        ? Color(0xFF14181B)
-                                                        : Color(0xFF57636C),
+                                                        ? const Color(0xFF14181B)
+                                                        : const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -512,7 +512,7 @@ class _AppearnceWidgetState extends State<AppearnceWidget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 30.0)),
+                    ].divide(const SizedBox(height: 30.0)),
                   ),
                 ),
               ),

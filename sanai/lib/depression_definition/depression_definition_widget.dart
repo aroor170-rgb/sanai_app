@@ -69,7 +69,7 @@ class _DepressionDefinitionWidgetState
                       FlutterFlowTheme.of(context).headlineSmall.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -80,17 +80,17 @@ class _DepressionDefinitionWidgetState
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
                 child: ListView(
                   padding: EdgeInsets.zero,
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           12.0, 12.0, 12.0, 12.0),
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 4.0,
@@ -109,7 +109,7 @@ class _DepressionDefinitionWidgetState
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Text(
                             'What is Depression?',
@@ -124,7 +124,7 @@ class _DepressionDefinitionWidgetState
                                         .titleSmall
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF105A4A),
+                                  color: const Color(0xFF105A4A),
                                   fontSize: 22.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
@@ -141,7 +141,7 @@ class _DepressionDefinitionWidgetState
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Text(
                         'Depression is a mental health disorder that affects mood and causes a person to experience persistent sadness and a loss of interest in activities they once enjoyed.',
                         style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -153,7 +153,7 @@ class _DepressionDefinitionWidgetState
                                     .labelLarge
                                     .fontStyle,
                               ),
-                              color: Color(0x86105A4A),
+                              color: const Color(0x86105A4A),
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .labelLarge
@@ -166,10 +166,10 @@ class _DepressionDefinitionWidgetState
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           12.0, 12.0, 12.0, 12.0),
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 4.0,
@@ -188,7 +188,7 @@ class _DepressionDefinitionWidgetState
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Text(
                             'Common Symptoms:',
@@ -203,7 +203,7 @@ class _DepressionDefinitionWidgetState
                                         .titleSmall
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF105A4A),
+                                  color: const Color(0xFF105A4A),
                                   fontSize: 22.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
@@ -219,9 +219,9 @@ class _DepressionDefinitionWidgetState
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-1.0, -1.0),
+                      alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Text(
                           '• Persistent feelings of sadness or emptiness.\n\n• Loss of interest in enjoyable activities.\n\n• Sleep disturbances (sleeping too little or too much).\n\n• Difficulty concentrating.\n\n• Feelings of guilt or worthlessness.\n\n• Loss of energy or constant fatigue.',
@@ -235,7 +235,7 @@ class _DepressionDefinitionWidgetState
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0x86105A4A),
+                                    color: const Color(0x86105A4A),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelLarge
@@ -248,7 +248,7 @@ class _DepressionDefinitionWidgetState
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(height: 10.0)),
+                  ].divide(const SizedBox(height: 10.0)),
                 ),
               ),
             ],
